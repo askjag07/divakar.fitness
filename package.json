@@ -1,0 +1,61 @@
+{
+  "name": "rapid-jamplate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A really fast template for gatsby cloud apps.",
+  "author": "Akshaj Jagarapu",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "preload-fonts": "gatsby-preload-fonts",
+    "format": "prettier --ignore-path .gitignore --write .",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "gatsby": "^3.8.0",
+    "gatsby-plugin-gatsby-cloud": "^2.8.1",
+    "gatsby-plugin-image": "^1.8.0",
+    "gatsby-plugin-manifest": "^3.8.0",
+    "gatsby-plugin-offline": "^4.8.0",
+    "gatsby-plugin-preact": "^5.8.0",
+    "gatsby-plugin-preload-fonts": "^2.8.0",
+    "gatsby-plugin-purgecss": "^6.0.2",
+    "gatsby-plugin-react-helmet": "^4.8.0",
+    "gatsby-plugin-robots-txt": "^1.6.2",
+    "gatsby-plugin-sass": "^4.8.0",
+    "gatsby-plugin-sharp": "^3.8.0",
+    "gatsby-plugin-sitemap": "^4.4.0",
+    "gatsby-source-contentful": "^5.8.0",
+    "gatsby-source-filesystem": "^3.8.0",
+    "gatsby-transformer-sharp": "^3.8.0",
+    "preact": "^10.5.13",
+    "preact-render-to-string": "^5.1.19",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.35.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "@types/react-helmet": "^6.1.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.4"
+  }
+}
