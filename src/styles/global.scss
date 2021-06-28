@@ -1,17 +1,17 @@
 @charset 'utf-8';
 
-$black: #0a0a0a;
-$black-bis: #121212;
-$black-ter: #242424;
-$grey-darker: #363636;
-$grey-dark: #4a4a4a;
-$grey: #7a7a7a;
-$grey-light: #b5b5b5;
-$grey-lighter: #dbdbdb;
-$grey-lightest: #ededed;
-$white-ter: #f5f5f5;
-$white-bis: #fafafa;
-$white: #fff;
+$white: #0a0a0a;
+$white-bis: #121212;
+$white-ter: #242424;
+$grey-lightest: #363636;
+$grey-lighter: #4a4a4a;
+$grey-light: #7a7a7a;
+$grey: #b5b5b5;
+$grey-dark: #dbdbdb;
+$grey-darker: #ededed;
+$black-ter: #f5f5f5;
+$black-bis: #fafafa;
+$black: #fff;
 
 $orange: #ff470f;
 $yellow: #ffe08a;
@@ -21,6 +21,15 @@ $cyan: #3e8ed0;
 $blue: #485fc7;
 $purple: #b86bff;
 $red: #f14668;
+
+$primary: $cyan;
+$link: $turquoise;
+
+/*$scheme-main-bis: $black;
+$scheme-main-ter: $black;
+$scheme-invert: $black;
+$scheme-invert-bis: $black;
+$scheme-invert-ter: $black;*/
 
 $family-sans-serif: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto',
   'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -38,3 +47,26 @@ $radius-large: 6px;
 $radius-rounded: 9999px;
 
 @import 'bulma/bulma.sass';
+
+@keyframes bouncing {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -50px, 0);
+  }
+}
+@-webkit-keyframes bouncing {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 200px, 0);
+    transform: translate3d(0, -50px, 0);
+  }
+}
+.is-bouncing {
+  animation: bouncing 1.25s ease-out 0s infinite alternate;
+  -webkit-animation: bouncing 1.25s ease-out 0s infinite alternate;
+}
