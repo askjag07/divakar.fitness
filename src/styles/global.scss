@@ -75,6 +75,7 @@ h1 {
     transform: translate3d(0, -50px, 0);
   }
 }
+<<<<<<< HEAD
 @-moz-keyframes bouncing {
   from {
     -webkit-transform: translate3d(0, 0, 0);
@@ -90,4 +91,9 @@ h1 {
   -moz-animation: bouncing 1.25s ease-out 0s infinite alternate;
   -webkit-animation: bouncing 1.25s ease-out 0s infinite alternate;
   -o-animation: bouncing 1.25s ease-out 0s infinite alternate;
+=======
+.is-bouncing {
+  animation: bouncing 1.25s ease-out 0s infinite alternate;
+  -webkit-animation: bouncing 1.25s ease-out 0s infinite alternate;
+>>>>>>> 4806c665d7a62f0b472cfa42d9231db2440c01d6
 }

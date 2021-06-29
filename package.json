@@ -1,6 +1,6 @@
 {
   "name": "rapid-jamplate",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "private": true,
   "description": "A really fast template for gatsby cloud apps.",
   "author": "Akshaj Jagarapu",
@@ -13,9 +13,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "fonts": "gatsby-preload-fonts",
+    "preload-fonts": "gatsby-preload-fonts",
     "format": "prettier --ignore-path .gitignore --write .",
-    "test": "tsc"
+    "type-check": "tsc"
   },
   "dependencies": {
     "@fontsource/big-shoulders-stencil-text": "^4.4.5",
