@@ -1,7 +1,10 @@
 import * as React from 'react';
-<<<<<<< HEAD
+import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import Layout from '../components/layout';
+
+import '../styles/index.scss';
 
 export default class IndexPage extends React.Component<{}, {}> {
   private scrollRef: React.RefObject<HTMLButtonElement> =
@@ -10,179 +13,63 @@ export default class IndexPage extends React.Component<{}, {}> {
   override render() {
     return (
       <Layout>
-        <main className="hero is-fullheight-with-navbar has-text-centered">
+        <main className="hero is-fullheight has-text-centered">
           <div className="hero-body">
             <div className="column">
-              <h1 className="title is-1">Hard Work Pays Off</h1>
-              <span className="subtitle">
-                <button className="button is-large is-primary mr-4 mb-4">
-                  Let's Talk!
-                </button>
-              </span>
+              <h1 className="title is-1">
+                Experienced.
+                <br />
+                Certified.
+                <br />
+                Trainer.
+              </h1>
+              <div className="buttons is-grouped is-inline">
+                <a
+                  className="button is-medium is-primary mt-5 mr-4"
+                  href="tel:+918074623617"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="icon is-small">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="#fff"
+                      height={24}
+                    >
+                      <path d="M497.39 361.8l-112-48a24 24 0 00-28 6.9l-49.6 60.6A370.66 370.66 0 01130.6 204.11l60.6-49.6a23.94 23.94 0 006.9-28l-48-112A24.16 24.16 0 00122.6.61l-104 24A24 24 0 000 48c0 256.5 207.9 464 464 464a24 24 0 0023.4-18.6l24-104a24.29 24.29 0 00-14.01-27.6z" />
+                    </svg>
+                  </span>
+                  <span>&nbsp;Call Me</span>
+                </a>
+                <a
+                  className="button is-medium is-info mt-5 ml-4"
+                  href="mailto:vonteddudivakar@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="icon is-small">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="#fff"
+                      height={24}
+                    >
+                      <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6l154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4l173.4-128.7c5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+                    </svg>
+                  </span>
+                  <span>&nbsp;Email Me</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div className="hero-foot mb-4">
+          <div className="hero-foot mb-5">
             <button
               className="button is-black is-inverted is-bouncing"
               onClick={() => this.scrollRef.current?.scrollIntoView()}
               ref={this.scrollRef}
             >
               <span className="icon">
-=======
-import { Link, PageProps } from 'gatsby';
-
-export default class IndexPage extends React.Component<
-  {},
-  { activeMenu: boolean }
-> {
-  constructor(props: PageProps) {
-    super(props);
-    this.state = {
-      activeMenu: false,
-    };
-  }
-  override render() {
-    return (
-      <>
-        <header>
-          <nav
-            className="navbar is-fixed-top is-spaced has-shadow"
-            role="navigation"
-            aria-label="Main Navigation"
-          >
-            <div className="container">
-              <div className="navbar-brand">
-                <Link
-                  className="navbar-item has-text-black is-size-3 mr-6"
-                  to="/"
-                >
-                  <strong>Divakar</strong>
-                </Link>
-                <a
-                  role="button"
-                  className={`navbar-burger ${
-                    this.state.activeMenu ? 'is-active' : ''
-                  }`}
-                  aria-label="menu"
-                  aria-expanded="false"
-                  data-target="mainNavbar"
-                  onClick={() =>
-                    this.setState({ activeMenu: !this.state.activeMenu })
-                  }
-                >
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                </a>
-              </div>
-              <div
-                id="mainNavbar"
-                className={`navbar-menu ${
-                  this.state.activeMenu ? 'is-active' : ''
-                }`}
-              >
-                <div className="navbar-start pl-2">
-                  <a className="navbar-item" to="/">
-                    Testimonials
-                  </a>
-                  <a className="navbar-item" to="/">
-                    Facebook
-                  </a>
-                  <a className="navbar-item" to="/">
-                    Instagram
-                  </a>
-                </div>
-                <div className="navbar-end">
-                  <div className="navbar-item">
-                    <div className="buttons has-addons">
-                      <a
-                        className="button is-inverted is-black"
-                        href="tel:+918074623617"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span className="icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"
-                            fill="#fff"
-                          >
-                            <path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM94 416c-7.033 0-13.057-4.873-14.616-11.627l-14.998-65a15 15 0 018.707-17.16l69.998-29.999a15 15 0 0117.518 4.289l30.997 37.885c48.944-22.963 88.297-62.858 110.781-110.78l-37.886-30.997a15.001 15.001 0 01-4.289-17.518l30-69.998a15 15 0 0117.16-8.707l65 14.998A14.997 14.997 0 01384 126c0 160.292-129.945 290-290 290z" />
-                          </svg>
-                        </span>
-                      </a>
-                      <a
-                        className="button is-inverted is-black"
-                        href="mailto:vonteddudivakar@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span className="icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"
-                            fill="#fff"
-                          >
-                            <path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM178.117 262.104L64 177.167V152c0-13.255 10.745-24 24-24h272c13.255 0 24 10.745 24 24v25.167c-24.371 18.969-23.434 19.124-114.117 84.938-10.5 7.655-31.392 26.12-45.883 25.894-14.503.218-35.367-18.227-45.883-25.895zM384 217.775V360c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V217.775c13.958 10.794 33.329 25.236 95.303 70.214 14.162 10.341 37.975 32.145 64.694 32.01 26.887.134 51.037-22.041 64.72-32.025L384 217.775z" />
-                          </svg>
-                        </span>
-                      </a>
-                      <a
-                        className="button is-inverted is-black"
-                        href="mailto:vonteddudivakar@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span className="icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"
-                            fill="#fff"
-                          >
-                            <path d="M400 32H48A48 48 0 000 80v352a48 48 0 0048 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0048-48V80a48 48 0 00-48-48z" />
-                          </svg>
-                        </span>
-                      </a>
-                      <a
-                        className="button is-inverted is-black"
-                        href="mailto:vonteddudivakar@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span className="icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"
-                            fill="#fff"
-                          >
-                            <path d="M224 202.66A53.34 53.34 0 10277.36 256 53.38 53.38 0 00224 202.66zm124.71-41a54 54 0 00-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31 6.43a54 54 0 00-30.41 30.41c-8.28 21-6.43 71.05-6.43 94.33s-1.85 73.27 6.47 94.34a54 54 0 0030.41 30.41c21 8.29 71 6.43 94.31 6.43s73.24 1.93 94.3-6.43a54 54 0 0030.41-30.41c8.35-21 6.43-71.05 6.43-94.33s1.92-73.26-6.43-94.33zM224 338a82 82 0 1182-82 81.9 81.9 0 01-82 82zm85.38-148.3a19.14 19.14 0 1119.13-19.14 19.1 19.1 0 01-19.09 19.18zM400 32H48A48 48 0 000 80v352a48 48 0 0048 48h352a48 48 0 0048-48V80a48 48 0 00-48-48zm-17.12 290c-1.29 25.63-7.14 48.34-25.85 67s-41.4 24.63-67 25.85c-26.41 1.49-105.59 1.49-132 0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61 0-132 1.29-25.63 7.07-48.34 25.85-67s41.47-24.56 67-25.78c26.41-1.49 105.59-1.49 132 0 25.63 1.29 48.33 7.15 67 25.85s24.63 41.42 25.85 67.05c1.49 26.32 1.49 105.44 0 131.88z" />
-                          </svg>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </header>
-        <div className="container">
-          <main className="hero is-fullheight">
-            <div className="hero-body">
-              <div className="columns is-centered is-vcentered">
-                <div className="column is-6">
-                  <h1 className="title is-1">The Greatest Website Ever</h1>
-                  <button className="button is-large is-primary mr-4 mb-4">
-                    Projects
-                  </button>
-                  <button className="button is-large">Blog</button>
-                </div>
-                <div className="column is-6"></div>
-              </div>
-            </div>
-            <div className="hero-foot mb-4 has-text-centered">
-              <span className="icon is-bouncing">
->>>>>>> 4806c665d7a62f0b472cfa42d9231db2440c01d6
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 320 512"
@@ -191,48 +78,118 @@ export default class IndexPage extends React.Component<
                   <path d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z" />
                 </svg>
               </span>
-<<<<<<< HEAD
             </button>
           </div>
         </main>
-        <section className="section is-medium has-text-right">
-          <h3 className="title">Section 1</h3>
-          <h4 className="subtitle">There is so much going on here.</h4>
+        <section className="section is-medium has-text-centered">
+          <h2 className="title is-2">
+            Build Muscle.
+            <br />
+            Lose Weight.
+          </h2>
+          <Link
+            className="button is-primary is-medium mt-5"
+            to="/testimonials/"
+          >
+            See Testimonials
+          </Link>
         </section>
-        <section className="section is-medium">
-          <h3 className="title">Section 2</h3>
-          <h4 className="subtitle">Here too, that's a fact.</h4>
+        <section className="sl section columns is-4 is-vcentered is-centered is-mobile">
+          <div className="column box mx-4 is-4 has-background-info">
+            <StaticImage
+              src="../images/1.png"
+              alt="Client 1 before and after gym workouts."
+            />
+          </div>
+          <div className="column box mx-4 is-4 has-background-info">
+            <StaticImage
+              src="../images/2.png"
+              alt="Client 2 before and after gym workouts."
+            />
+          </div>
+          <div className="column box mx-4 is-4 has-background-info">
+            <StaticImage
+              src="../images/3.png"
+              alt="Client 3 before and after gym workouts."
+            />
+          </div>
+          <div className="column box mx-4 is-4 has-background-info">
+            <StaticImage
+              src="../images/4.png"
+              alt="Client 4 before and after gym workouts."
+            />
+          </div>
+          <div className="column box mx-4 is-4 has-background-info">
+            <StaticImage
+              src="../images/5.png"
+              alt="Client 5 before and after gym workouts."
+            />
+          </div>
+          <div className="column box mx-4 is-4 has-background-info">
+            <StaticImage
+              src="../images/6.png"
+              alt="Client 6 before and after gym workouts."
+            />
+          </div>
+          <div className="column box mx-4 is-4 has-background-info">
+            <StaticImage
+              src="../images/7.png"
+              alt="Client 7 before and after gym workouts."
+            />
+          </div>
+        </section>
+        <section className="section is-large">
+          <h2 className="title is-2">Results in 90 days</h2>
+          <div className="subtitle is-size-5 pt-6">
+            <div className="icon-text block">
+              <span className="icon mr-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width={36}
+                  height={36}
+                  fill="#b86bff"
+                >
+                  <path d="M323.56 51.2c-20.8 19.3-39.58 39.59-56.22 59.97C240.08 73.62 206.28 35.53 168 0 69.74 91.17 0 209.96 0 281.6 0 408.85 100.29 512 224 512s224-103.15 224-230.4c0-53.27-51.98-163.14-124.44-230.4zm-19.47 340.65C282.43 407.01 255.72 416 226.86 416 154.71 416 96 368.26 96 290.75c0-38.61 24.31-72.63 72.79-130.75 6.93 7.98 98.83 125.34 98.83 125.34l58.63-66.88c4.14 6.85 7.91 13.55 11.27 19.97 27.35 52.19 15.81 118.97-33.43 153.42z" />
+                </svg>
+              </span>
+              Increased confidence and stamina
+            </div>
+            <div className="icon-text block">
+              <span className="icon mr-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width={36}
+                  height={36}
+                  fill="#b86bff"
+                >
+                  <path d="M323.56 51.2c-20.8 19.3-39.58 39.59-56.22 59.97C240.08 73.62 206.28 35.53 168 0 69.74 91.17 0 209.96 0 281.6 0 408.85 100.29 512 224 512s224-103.15 224-230.4c0-53.27-51.98-163.14-124.44-230.4zm-19.47 340.65C282.43 407.01 255.72 416 226.86 416 154.71 416 96 368.26 96 290.75c0-38.61 24.31-72.63 72.79-130.75 6.93 7.98 98.83 125.34 98.83 125.34l58.63-66.88c4.14 6.85 7.91 13.55 11.27 19.97 27.35 52.19 15.81 118.97-33.43 153.42z" />
+                </svg>
+              </span>
+              No more severe pain and sickness
+            </div>
+            <div className="icon-text block">
+              <span className="icon mr-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width={36}
+                  height={36}
+                  fill="#b86bff"
+                >
+                  <path d="M323.56 51.2c-20.8 19.3-39.58 39.59-56.22 59.97C240.08 73.62 206.28 35.53 168 0 69.74 91.17 0 209.96 0 281.6 0 408.85 100.29 512 224 512s224-103.15 224-230.4c0-53.27-51.98-163.14-124.44-230.4zm-19.47 340.65C282.43 407.01 255.72 416 226.86 416 154.71 416 96 368.26 96 290.75c0-38.61 24.31-72.63 72.79-130.75 6.93 7.98 98.83 125.34 98.83 125.34l58.63-66.88c4.14 6.85 7.91 13.55 11.27 19.97 27.35 52.19 15.81 118.97-33.43 153.42z" />
+                </svg>
+              </span>
+              10+ years of health after retirement
+            </div>
+          </div>
         </section>
         <section className="section is-medium has-text-centered">
-          <h3 className="title">Section 3</h3>
+          <h3 className="title">Results in 90 days</h3>
           <h4 className="subtitle">That's it for today. Bye!</h4>
         </section>
       </Layout>
-=======
-            </div>
-          </main>
-          <section className="section is-medium has-text-right">
-            <h3 className="title">Section 1</h3>
-            <h4 className="subtitle">There is so much going on here.</h4>
-          </section>
-          <section className="section is-medium">
-            <h3 className="title">Section 2</h3>
-            <h4 className="subtitle">Here too, that's a fact.</h4>
-          </section>
-          <section className="section is-medium has-text-centered">
-            <h3 className="title">Section 3</h3>
-            <h4 className="subtitle">That's it for today. Bye!</h4>
-          </section>
-        </div>
-        <footer className="footer">
-          <div className="container">
-            <div className="content has-text-centered">
-              <p>© 2021, Virtuoso. All rights reserved.</p>
-            </div>
-          </div>
-        </footer>
-      </>
->>>>>>> 4806c665d7a62f0b472cfa42d9231db2440c01d6
     );
   }
 }

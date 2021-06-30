@@ -1,0 +1,43 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+@keyframes sl {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200%;
+  }
+}
+@-webkit-keyframes sl {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200%;
+  }
+}
+@-moz-keyframes sl {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
+.sl {
+  position: relative;
+  width: 100vw;
+  & {
+    animation: sl 10s linear infinite;
+    -moz-animation: sl 10s linear infinite;
+    -webkit-animation: sl 10s linear infinite;
+    -o-animation: sl 10s linear infinite;
+    transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+  }
+}

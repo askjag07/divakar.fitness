@@ -13,48 +13,52 @@ $black-ter: #f5f5f5;
 $black-bis: #fafafa;
 $black: #fff;
 
-$orange: #ff470f;
-$yellow: #ffe08a;
-$green: #48c78e;
-$turquoise: #00d1b2;
-$cyan: #3e8ed0;
-$blue: #485fc7;
+$orange: #ff9d6d;
+$yellow: #f9f871;
+$green: #00c2ad;
+$turquoise: #45fce5;
+$cyan: #00dfff;
+$blue: #00b3ff;
 $purple: #b86bff;
 $red: #f14668;
 
-$primary: $cyan;
-$link: $turquoise;
+$primary: $purple;
+$link: $purple;
+$info: $blue;
+$success: $turquoise;
+$warning: $yellow;
+$danger: $red;
 
-/*$scheme-main-bis: $black;
-$scheme-main-ter: $black;
-$scheme-invert: $black;
-$scheme-invert-bis: $black;
-$scheme-invert-ter: $black;*/
+$family-sans-serif: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto,
+  Oxygen, Oxygen-Sans, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-$family-sans-serif: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto',
-  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  'Helvetica', 'Arial', sans-serif;
+$size-1: 8rem;
+$size-2: 6rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.75rem;
 
 $weight-light: 300;
 $weight-normal: 400;
-$weight-medium: 500;
-$weight-semibold: 600;
-$weight-bold: 700;
+$weight-medium: 700;
+$weight-semibold: 800;
+$weight-bold: 900;
 
-$radius-small: 2px;
-$radius: 4px;
-$radius-large: 6px;
+$radius-small: 6px;
+$radius: 12px;
+$radius-large: 18px;
 $radius-rounded: 9999px;
 
 @import 'bulma/bulma.sass';
 
-html {
-  scroll-behavior: smooth;
-}
-h1 {
-  font-family: 'Big Shoulders Stencil Text', BlinkMacSystemFont, -apple-system,
-    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+.navbar-brand,
+h1,
+h2 {
+  font-family: 'Big Shoulders Stencil Display', $family-sans-serif;
 }
 
 @keyframes bouncing {
@@ -75,7 +79,6 @@ h1 {
     transform: translate3d(0, -50px, 0);
   }
 }
-<<<<<<< HEAD
 @-moz-keyframes bouncing {
   from {
     -webkit-transform: translate3d(0, 0, 0);
@@ -87,13 +90,8 @@ h1 {
   }
 }
 .is-bouncing {
-  animation: bouncing 1.25s ease-out 0s infinite alternate;
-  -moz-animation: bouncing 1.25s ease-out 0s infinite alternate;
-  -webkit-animation: bouncing 1.25s ease-out 0s infinite alternate;
-  -o-animation: bouncing 1.25s ease-out 0s infinite alternate;
-=======
-.is-bouncing {
-  animation: bouncing 1.25s ease-out 0s infinite alternate;
-  -webkit-animation: bouncing 1.25s ease-out 0s infinite alternate;
->>>>>>> 4806c665d7a62f0b472cfa42d9231db2440c01d6
+  animation: bouncing 1.25s ease-out infinite alternate;
+  -moz-animation: bouncing 1.25s ease-out infinite alternate;
+  -webkit-animation: bouncing 1.25s ease-out infinite alternate;
+  -o-animation: bouncing 1.25s ease-out infinite alternate;
 }

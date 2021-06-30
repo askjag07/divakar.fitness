@@ -4,13 +4,6 @@ module.exports = {
     siteUrl: `https://divakar.fitness`,
   },
   plugins: [
-    /*{
-      resolve: `gatsby-source-contentful`,
-      options: {
-        accessToken: ``,
-        spaceId: ``,
-      },
-    },*/
     {
       resolve: `gatsby-plugin-typescript`,
       options: {
@@ -22,15 +15,17 @@ module.exports = {
     },
     `gatsby-plugin-preact`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true,
       },
     },
-    `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-preload-fonts`,
+    `gatsby-plugin-minify-classnames`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sitemap`,
@@ -69,16 +64,6 @@ module.exports = {
           globPatterns: [`./icons/icon*`],
         },
       },
-    },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `./src/images/`,
-      },
-      __key: `images`,
     },
   ],
 };
