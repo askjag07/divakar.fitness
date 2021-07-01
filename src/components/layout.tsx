@@ -155,7 +155,7 @@ export default class Layout extends React.Component<
             </div>
           </nav>
         </header>
-        <div className="container">{this.props.children}</div>
+        {this.props.children}
         <footer className="footer">
           <div className="container">
             <div className="content has-text-centered">
