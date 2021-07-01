@@ -3,6 +3,7 @@ module.exports = {
     siteUrl: `https://divakar.fitness`,
   },
   plugins: [
+    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-typescript`,
       options: {
@@ -12,7 +13,6 @@ module.exports = {
         onlyRemoveTypeImports: true,
       },
     },
-    `gatsby-plugin-preact`,
     `gatsby-plugin-loadable-components-ssr`,
     {
       resolve: `gatsby-plugin-postcss`,
