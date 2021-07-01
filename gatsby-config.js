@@ -25,6 +25,9 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true,
+        purgeCSSOptions: {
+          safelist: [`0%`, `100%`],
+        },
       },
     },
     `gatsby-plugin-preload-fonts`,

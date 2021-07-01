@@ -40,6 +40,7 @@
     "gatsby-plugin-sass": "^4.8.0",
     "gatsby-plugin-sharp": "^3.8.0",
     "gatsby-plugin-sitemap": "^4.4.0",
+    "gatsby-source-filesystem": "^3.8.0",
     "postcss": "^8.3.5",
     "postcss-preset-env": "^6.7.0",
     "preact": "^10.5.13",
