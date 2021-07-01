@@ -1,6 +1,5 @@
 module.exports = {
   siteMetadata: {
-    title: `Divakar | Gym Trainer`,
     siteUrl: `https://divakar.fitness`,
   },
   plugins: [
@@ -14,6 +13,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-preact`,
+    `gatsby-plugin-loadable-components-ssr`,
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
@@ -54,13 +54,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Divakar | Gym Trainer`,
+        name: `Divakar`,
         short_name: `Divakar`,
         lang: `en`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#000000`,
+        theme_color: `#b86bff`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/i.png`,
       },
     },
     {
