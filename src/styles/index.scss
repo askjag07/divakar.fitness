@@ -1,43 +1,27 @@
 :root {
   scroll-behavior: smooth;
 }
-
 @keyframes sl {
   0% {
-    left: 0;
+    transform: translate3d(100%, 0, 0);
   }
   100% {
-    left: -200%;
+    transform: translate3d(-100%, 0, 0);
   }
 }
-@-webkit-keyframes sl {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -200%;
-  }
-}
-@-moz-keyframes sl {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -200%;
-  }
-}
-
 .sl {
   position: relative;
   width: 100vw;
+  padding-left: 0;
   & {
-    animation: sl 10s linear infinite;
-    -moz-animation: sl 10s linear infinite;
-    -webkit-animation: sl 10s linear infinite;
-    -o-animation: sl 10s linear infinite;
-    transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
+    animation: sl 60s linear infinite;
+  }
+  &:hover {
+    animation-play-state: paused;
+  }
+  div.box:hover {
+    transform: translate3d(0, -5%, 0);
+    transition: transform 0.2s ease-out;
+    box-shadow: 0 2em 4em -0.5em rgba(#fff, 0.2), 0 0px 0 4px rgba(#fff, 0.02);
   }
 }

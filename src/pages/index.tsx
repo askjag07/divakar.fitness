@@ -94,52 +94,82 @@ export default class IndexPage extends React.Component<{}, {}> {
             See Testimonials
           </Link>
         </section>
-        <section className="sl section columns is-4 is-vcentered is-centered is-mobile">
-          <div className="column box mx-4 is-4 has-background-info">
+        <section className="sl columns is-5 is-vcentered is-centered is-mobile p-0 m-0">
+          <div className="column box mx-4 is-3 has-background-info">
             <StaticImage
               src="../images/1.png"
               alt="Client 1 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-4 has-background-info">
+          <div className="column box mx-4 is-3 has-background-info">
             <StaticImage
               src="../images/2.png"
               alt="Client 2 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-4 has-background-info">
+          <div className="column box mx-4 is-3 has-background-info">
             <StaticImage
               src="../images/3.png"
               alt="Client 3 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-4 has-background-info">
+          <div className="column box mx-4 is-3 has-background-info">
             <StaticImage
               src="../images/4.png"
               alt="Client 4 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-4 has-background-info">
+          <div className="column box mx-4 is-3 has-background-info">
             <StaticImage
               src="../images/5.png"
               alt="Client 5 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-4 has-background-info">
+          <div className="column box mx-4 is-3 has-background-info">
             <StaticImage
               src="../images/6.png"
               alt="Client 6 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-4 has-background-info">
+          <div className="column box mx-4 is-3 has-background-info">
             <StaticImage
               src="../images/7.png"
               alt="Client 7 before and after gym workouts."
             />
           </div>
+          <div className="column box mx-4 is-3 has-background-info">
+            <StaticImage
+              src="../images/1.png"
+              alt="Client 1 before and after gym workouts."
+            />
+          </div>
+          <div className="column box mx-4 is-3 has-background-info">
+            <StaticImage
+              src="../images/2.png"
+              alt="Client 2 before and after gym workouts."
+            />
+          </div>
+          <div className="column box mx-4 is-3 has-background-info">
+            <StaticImage
+              src="../images/3.png"
+              alt="Client 3 before and after gym workouts."
+            />
+          </div>
+          <div className="column box mx-4 is-3 has-background-info">
+            <StaticImage
+              src="../images/4.png"
+              alt="Client 4 before and after gym workouts."
+            />
+          </div>
+          <div className="column box mx-4 is-3 has-background-info">
+            <StaticImage
+              src="../images/5.png"
+              alt="Client 5 before and after gym workouts."
+            />
+          </div>
         </section>
         <section className="section is-large">
-          <h2 className="title is-2">Results in 90 days</h2>
+          <h2 className="title is-2">In 90 Days.</h2>
           <div className="subtitle is-size-5 pt-6">
             <div className="icon-text block">
               <span className="icon mr-5">

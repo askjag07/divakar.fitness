@@ -14,6 +14,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-preact`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require(`postcss-preset-env`)({ stage: 3 })],
+      },
+    },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-purgecss`,

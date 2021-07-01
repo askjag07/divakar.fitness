@@ -1,11 +1,14 @@
 {
   "name": "divakar.fitness",
-  "version": "1.1.5",
+  "version": "1.1.7",
   "private": true,
   "description": "A really fast template for gatsby cloud apps.",
   "author": "Akshaj Jagarapu",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "preact",
+    "bulma",
+    "sass"
   ],
   "scripts": {
     "develop": "gatsby develop",
@@ -26,6 +29,7 @@
     "gatsby-plugin-manifest": "^3.8.0",
     "gatsby-plugin-minify-classnames": "^0.3.0",
     "gatsby-plugin-offline": "^4.8.0",
+    "gatsby-plugin-postcss": "^4.8.0",
     "gatsby-plugin-preact": "^5.8.0",
     "gatsby-plugin-preload-fonts": "^2.8.0",
     "gatsby-plugin-purgecss": "^6.0.2",
@@ -37,7 +41,9 @@
     "preact": "^10.5.13",
     "preact-render-to-string": "^5.1.19",
     "react-helmet": "^6.1.0",
-    "sass": "^1.35.1"
+    "sass": "^1.35.1",
+    "postcss": "^8.3.5",
+    "postcss-preset-env": "^6.7.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.11",
@@ -55,6 +61,6 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.2",
-    "typescript": "^4.3.4"
+    "typescript": "^4.3.5"
   }
 }
