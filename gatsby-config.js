@@ -29,7 +29,6 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-minify-classnames`,
     `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-plugin-sharp`,

@@ -33,7 +33,11 @@ export default class Layout extends React.Component<
           />
           <link rel="shortcut icon" href="/i.png"></link>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="description"
             content="Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today."
