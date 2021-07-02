@@ -1,0 +1,26 @@
+{
+  "timestamp": 1625240699676,
+  "hash": "5d8d3462c0061d6369731b7d481db558",
+  "assets": {
+    "/404.html": {
+      "/static/big-shoulders-stencil-display-latin-900-normal-1deec7265ba9e2e0f9093f854850622f.woff2": true,
+      "/static/big-shoulders-stencil-display-latin-800-normal-58ba56d0c96939d4c93c25328d3e2986.woff2": true
+    },
+    "/404/": {
+      "/static/big-shoulders-stencil-display-latin-900-normal-1deec7265ba9e2e0f9093f854850622f.woff2": true,
+      "/static/big-shoulders-stencil-display-latin-800-normal-58ba56d0c96939d4c93c25328d3e2986.woff2": true
+    },
+    "/about/": {
+      "/static/big-shoulders-stencil-display-latin-900-normal-1deec7265ba9e2e0f9093f854850622f.woff2": true,
+      "/static/big-shoulders-stencil-display-latin-800-normal-58ba56d0c96939d4c93c25328d3e2986.woff2": true
+    },
+    "/": {
+      "/static/big-shoulders-stencil-display-latin-900-normal-1deec7265ba9e2e0f9093f854850622f.woff2": true,
+      "/static/big-shoulders-stencil-display-latin-800-normal-58ba56d0c96939d4c93c25328d3e2986.woff2": true
+    },
+    "/testimonials/": {
+      "/static/big-shoulders-stencil-display-latin-900-normal-1deec7265ba9e2e0f9093f854850622f.woff2": true,
+      "/static/big-shoulders-stencil-display-latin-800-normal-58ba56d0c96939d4c93c25328d3e2986.woff2": true
+    }
+  }
+}

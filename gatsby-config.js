@@ -40,7 +40,46 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: `gatsby-plugin-gatsby-cloud`,
+      options: {
+        allPageHeaders: [
+          'X-Frame-Options: "SAMEORIGIN" always',
+          'X-XSS-Protection: "1; mode=block" always',
+          'X-Content-Type-Options: "nosniff" always',
+          'Referrer-Policy: "no-referrer-when-downgrade" always',
+          'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload',
+        ],
+        headers: {
+          '/sw.js': ['cache-control: public, max-age=0, must-revalidate'],
+          '/*.html': ['cache-control: public, max-age=0, must-revalidate'],
+          '/**/*.html': ['cache-control: public, max-age=0, must-revalidate'],
+          '/page-data/**/page-data.json': [
+            'cache-control: public, max-age=0, must-revalidate',
+          ],
+          '/page-data/app-data.json': [
+            'cache-control: public, max-age=0, must-revalidate',
+          ],
+          '/static/*.woff': [
+            'cache-control: public, max-age=31536000, immutable',
+          ],
+          '/static/*.woff2': [
+            'cache-control: public, max-age=31536000, immutable',
+          ],
+          '/static/**/**/*.png': [
+            'cache-control: public, max-age=31536000, immutable',
+          ],
+          '/static/**/**/*.webp': [
+            'cache-control: public, max-age=31536000, immutable',
+          ],
+          '/*.js': ['cache-control: public, max-age=31536000, immutable'],
+          '/*.min.js': ['cache-control: public, max-age=31536000, immutable'],
+          '/*.js.map': ['cache-control: public, max-age=31536000, immutable'],
+          '/*.css': ['cache-control: public, max-age=31536000, immutable'],
+          '/*.png': ['cache-control: public, max-age=31536000, immutable'],
+        },
+      },
+    },
     `gatsby-plugin-loadable-components-ssr`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,

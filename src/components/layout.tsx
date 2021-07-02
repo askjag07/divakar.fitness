@@ -6,8 +6,6 @@ export default class Layout extends React.Component<
   { title: string },
   { activeMenu: boolean }
 > {
-  path: string = '';
-  url: string = '';
   constructor(props: { title: string }) {
     super(props);
     this.state = {
@@ -19,10 +17,6 @@ export default class Layout extends React.Component<
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
-  override componentWillMount() {
-    this.path = window.location.pathname.slice(1, -1) || 'home';
-    this.url = window.location.href.slice(0, -1);
-  }
   override render() {
     return (
       <>
@@ -32,10 +26,11 @@ export default class Layout extends React.Component<
           }}
           defer={false}
         >
-          <title>{`${
-            this.path.charAt(0).toUpperCase() + this.path.slice(1)
-          } | Divakar, Professional Gym Trainer`}</title>
-          <link rel="canonical" href={this.url} />
+          <title>{`${this.props.title} | Divakar, Professional Gym Trainer`}</title>
+          <link
+            rel="canonical"
+            href={typeof window !== 'undefined' ? window.location.href : ''}
+          />
           <link rel="shortcut icon" href="/i.png"></link>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -53,7 +48,10 @@ export default class Layout extends React.Component<
             property="og:title"
             content="Divakar, Professional Gym Trainer"
           />
-          <meta property="og:url" content={this.url} />
+          <meta
+            property="og:url"
+            content={typeof window !== 'undefined' ? window.location.href : ''}
+          />
           <meta property="og:type" content="website" />
           <meta
             property="og:description"
@@ -64,7 +62,10 @@ export default class Layout extends React.Component<
             name="twitter:title"
             content="Divakar, Professional Gym Trainer"
           />
-          <meta property="twitter:url" content={this.url} />
+          <meta
+            property="twitter:url"
+            content={typeof window !== 'undefined' ? window.location.href : ''}
+          />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:creator" content="@divakarvonteddu" />
           <meta
@@ -77,17 +78,22 @@ export default class Layout extends React.Component<
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "image": [
-            "https://divakar.fitness/i.png",
-            "https://divakar.fitness/m.png",
-          ],
           "@id": "https://divakar.fitness",
           "name": "Divakar, Professional Gym Trainer",
+          "url": "https://divakar.fitness",
+          "logo":
+            "https://divakar.fitness/i.png",
+          "image": [
+            "https://divakar.fitness/m.png"
+          ],
+          "telephone": "+918074623617",
           "description": "Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today.",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+91-80746-23617",
-            "contactType": "Customer Service"
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "xpath": [
+              "/html/head/title",
+              "/html/head/meta[@name='description']/@content"
+            ]
           }
         }
       `}
