@@ -42,6 +42,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-gatsby-cloud',
       options: {
+        mergeSecurityHeaders: true,
+        mergeLinkHeaders: true,
+        mergeCachingHeaders: true,
         allPageHeaders: [
           'X-Robots-Tag: all',
           'X-Frame-Options: SAMEORIGIN, always',
