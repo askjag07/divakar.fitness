@@ -43,9 +43,29 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-gatsby-cloud',
       options: {
-        mergeSecurityHeaders: true,
-        mergeLinkHeaders: true,
-        mergeCachingHeaders: true,
+        headers: {
+          '/sw.js': ['cache-control: public, max-age=0, must-revalidate'],
+          '/index.html': ['cache-control: public, max-age=0, must-revalidate'],
+          '/404.html': ['cache-control: public, max-age=0, must-revalidate'],
+          '/**/index.html': [
+            'cache-control: public, max-age=0, must-revalidate',
+          ],
+          '/page-data/app-data.json': [
+            'cache-control: public, max-age=0, must-revalidate',
+          ],
+          '/page-data/**/page-data.json': [
+            'cache-control: public, max-age=0, must-revalidate',
+          ],
+          '/static/\.(woff|woff2)$': [
+            'cache-control: public, max-age=31536000, immutable',
+          ],
+          '/static/**/**/\.(webp|png)$': [
+            'cache-control: public, max-age=31536000, immutable',
+          ],
+          '/\.(js|css|png)$': [
+            'cache-control: public, max-age=31536000, immutable',
+          ],
+        },
         allPageHeaders: [
           'X-Robots-Tag: all',
           'X-Frame-Options: SAMEORIGIN, always',
@@ -54,26 +74,9 @@ module.exports = {
           'Referrer-Policy: no-referrer-when-downgrade, always',
           'Strict-Transport-Security: max-age=31536000, includeSubDomains, preload',
         ],
-        headers: {
-          '/sw.js': ['cache-control: public, max-age=0, must-revalidate'],
-          '/*.html': ['cache-control: public, max-age=0, must-revalidate'],
-          '/**/*.html': ['cache-control: public, max-age=0, must-revalidate'],
-          '/page-data/app-data.json': [
-            'cache-control: public, max-age=0, must-revalidate',
-          ],
-          '/page-data/**/page-data.json': [
-            'cache-control: public, max-age=0, must-revalidate',
-          ],
-          '/static/*.(woff|woff2)$': [
-            'cache-control: public, max-age=31536000, immutable',
-          ],
-          '/static/**/**/*.(webp|png)$': [
-            'cache-control: public, max-age=31536000, immutable',
-          ],
-          '/*.(js|css|png)$': [
-            'cache-control: public, max-age=31536000, immutable',
-          ],
-        },
+        mergeSecurityHeaders: true,
+        mergeLinkHeaders: true,
+        mergeCachingHeaders: true,
       },
     },
     'gatsby-plugin-loadable-components-ssr',
