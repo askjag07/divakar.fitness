@@ -55,22 +55,12 @@ module.exports = {
           'Strict-Transport-Security: max-age=31536000, includeSubDomains, preload',
         ],
         headers: {
-          '/sw.js': ['cache-control: public, max-age=0, must-revalidate'],
-          '/*.html': ['cache-control: public, max-age=0, must-revalidate'],
-          '/**/*.html': ['cache-control: public, max-age=0, must-revalidate'],
-          '/page-data/**/page-data.json': [
-            'cache-control: public, max-age=0, must-revalidate',
-          ],
-          '/page-data/app-data.json': [
-            'cache-control: public, max-age=0, must-revalidate',
-          ],
-          '/static/*.(woff|woff2)$': [
-            'cache-control: public, max-age=31536000, immutable',
-          ],
-          '/static/**/**/*.(png|webp)$': [
-            'cache-control: public, max-age=31536000, immutable',
-          ],
-          '/*.(js|map|css|png)$': [
+          'sw.js': ['cache-control: public, max-age=0, must-revalidate'],
+          '*.html': ['cache-control: public, max-age=0, must-revalidate'],
+          '**/*.html': ['cache-control: public, max-age=0, must-revalidate'],
+          'page-data/': ['cache-control: public, max-age=0, must-revalidate'],
+          'static/': ['cache-control: public, max-age=31536000, immutable'],
+          '*.@(js|css|png)': [
             'cache-control: public, max-age=31536000, immutable',
           ],
         },
