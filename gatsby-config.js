@@ -56,21 +56,21 @@ module.exports = {
           '/page-data/*/page-data.json': [
             'cache-control: public, max-age=0, must-revalidate',
           ],
-          '/static/*.woff': [
+          '/static/.woff$': [
             'cache-control: public, max-age=31536000, immutable',
           ],
-          '/static/*.woff2': [
+          '/static/.woff2$': [
             'cache-control: public, max-age=31536000, immutable',
           ],
-          '/static/*/*/*.webp': [
+          '/static/*/*/.webp$': [
             'cache-control: public, max-age=31536000, immutable',
           ],
-          '/static/*/*/*.png': [
+          '/static/*/*/.png$': [
             'cache-control: public, max-age=31536000, immutable',
           ],
-          '/*.js': ['cache-control: public, max-age=31536000, immutable'],
-          '/*.css': ['cache-control: public, max-age=31536000, immutable'],
-          '/*.png': ['cache-control: public, max-age=31536000, immutable'],
+          '/.js$': ['cache-control: public, max-age=31536000, immutable'],
+          '/.css$': ['cache-control: public, max-age=31536000, immutable'],
+          '/.png$': ['cache-control: public, max-age=31536000, immutable'],
         },
         allPageHeaders: [
           'X-Robots-Tag: all',
