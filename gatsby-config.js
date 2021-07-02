@@ -43,6 +43,7 @@ module.exports = {
       resolve: 'gatsby-plugin-gatsby-cloud',
       options: {
         allPageHeaders: [
+          'X-Robots-Tag: all',
           'X-Frame-Options: SAMEORIGIN, always',
           'X-XSS-Protection: 1, mode=block, always',
           'X-Content-Type-Options: nosniff, always',
