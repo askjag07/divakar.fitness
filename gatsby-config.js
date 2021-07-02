@@ -68,11 +68,9 @@ module.exports = {
           '/static/*/*/*.png': [
             'cache-control: public, max-age=31536000, immutable',
           ],
-          '/.js$': ['cache-control: public, max-age=31536000, immutable'],
-          '/.map$': ['cache-control: public, max-age=31536000, immutable'],
-          '/.txt$': ['cache-control: public, max-age=31536000, immutable'],
-          '/.css$': ['cache-control: public, max-age=31536000, immutable'],
-          '/.png$': ['cache-control: public, max-age=31536000, immutable'],
+          '/*.js': ['cache-control: public, max-age=31536000, immutable'],
+          '/*.css': ['cache-control: public, max-age=31536000, immutable'],
+          '/*.png': ['cache-control: public, max-age=31536000, immutable'],
         },
         allPageHeaders: [
           'X-Robots-Tag: all',
