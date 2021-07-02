@@ -44,11 +44,11 @@ module.exports = {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
         allPageHeaders: [
-          'X-Frame-Options: "SAMEORIGIN" always',
-          'X-XSS-Protection: "1; mode=block" always',
-          'X-Content-Type-Options: "nosniff" always',
-          'Referrer-Policy: "no-referrer-when-downgrade" always',
-          'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload',
+          'X-Frame-Options: SAMEORIGIN, always',
+          'X-XSS-Protection: 1, mode=block, always',
+          'X-Content-Type-Options: nosniff, always',
+          'Referrer-Policy: no-referrer-when-downgrade, always',
+          'Strict-Transport-Security: max-age=31536000, includeSubDomains, preload',
         ],
         headers: {
           '/sw.js': ['cache-control: public, max-age=0, must-revalidate'],

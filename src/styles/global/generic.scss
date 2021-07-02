@@ -1,7 +1,9 @@
 @charset 'utf-8';
 
 html,
-body {
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
   scroll-behavior: smooth !important;
   overflow-x: hidden !important;
   overflow-y: scroll !important;
