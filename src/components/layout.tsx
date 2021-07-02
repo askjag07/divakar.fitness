@@ -21,8 +21,13 @@ export default class Layout extends React.Component<
   override render() {
     return (
       <>
-        <Helmet>
+        <Helmet
+          htmlAttributes={{
+            lang: 'en',
+          }}
+        >
           <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>{`${this.props.title} | Divakar`}</title>
         </Helmet>
         <header>
@@ -165,12 +170,12 @@ export default class Layout extends React.Component<
             </div>
           </nav>
         </header>
-        {this.props.children}
+        <div className="container">{this.props.children}</div>
         <section className="section is-medium has-text-centered">
-          <h2 className="title is-size-2">Start Today.</h2>
-          <div className="buttons is-grouped is-inline">
+          <h2 className="title is-size-2 is-size-2-2">Start Today.</h2>
+          <div className="buttons mt-3 are-medium is-inline-block">
             <a
-              className="button is-medium is-primary mt-5 mr-4"
+              className="button is-primary mx-3"
               href="tel:+918074623617"
               target="_blank"
               rel="noopener noreferrer"
@@ -188,7 +193,7 @@ export default class Layout extends React.Component<
               <span>&nbsp;Call Me</span>
             </a>
             <a
-              className="button is-medium is-info mt-5 ml-4"
+              className="button is-info mx-3"
               href="mailto:vonteddudivakar@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -273,7 +278,11 @@ export default class Layout extends React.Component<
                 </a>
               </div>
               <div className="level-item">
-                <button className="button is-primary" onClick={this.excelsior}>
+                <button
+                  name="Scroll Up"
+                  className="button mt-4 is-small is-primary"
+                  onClick={this.excelsior}
+                >
                   Back to Top
                 </button>
               </div>

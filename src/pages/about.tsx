@@ -13,7 +13,7 @@ export default class AboutPage extends React.Component<{}, {}> {
         <main className="hero is-fullheight has-text-centered">
           <div className="hero-body">
             <div className="column">
-              <h1 className="title is-1">
+              <h1 className="title is-size-2-1 is-size-2-mobile is-1">
                 Hello.
                 <br />I am <span className="has-text-info">Divakar</span>
                 <br />
@@ -23,6 +23,7 @@ export default class AboutPage extends React.Component<{}, {}> {
           </div>
           <div className="hero-foot mb-5">
             <button
+              name="Scroll Down"
               className="button is-black is-inverted is-bouncing"
               onClick={() => this.scrollRef.current?.scrollIntoView()}
               ref={this.scrollRef}
@@ -39,28 +40,26 @@ export default class AboutPage extends React.Component<{}, {}> {
             </button>
           </div>
         </main>
-        <div className="container">
-          <section className="section columns is-medium is-centered is-vcentered">
-            <div className="column is-6">
-              <h2 className="title is-2">
-                🏆 Body
-                <br />
-                Transformation
-                <br />
-                Specialist.
-              </h2>
-              <h3 className="subtitle"></h3>
-            </div>
-            <div className="olumn box is-6 m-6 has-background-info">
-              <StaticImage
-                src="../images/m.png"
-                alt="A picture of Divakar Vonteddu."
-              />
-            </div>
-          </section>
-        </div>
+        <section className="section columns is-medium is-centered is-vcentered has-text-centered-mobile">
+          <div className="column is-6">
+            <h2 className="title is-size-2-2 is-2">
+              🏆 Body
+              <br />
+              Transformation
+              <br />
+              Specialist.
+            </h2>
+            <h3 className="subtitle"></h3>
+          </div>
+          <div className="column box is-6 m-6 has-background-info">
+            <StaticImage
+              src="../images/m.png"
+              alt="A picture of Divakar Vonteddu."
+            />
+          </div>
+        </section>
         <section className="section is-large has-text-centered">
-          <h2 className="title is-2">
+          <h2 className="title is-size-2-2 is-2">
             Certified
             <br />
             Trainer.
