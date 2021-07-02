@@ -61,14 +61,12 @@ module.exports = {
             'cache-control: public, max-age=0, must-revalidate',
           ],
           '/static/*.*': ['cache-control: public, max-age=31536000, immutable'],
-          '/static/**/**/*.*': [
+          '/static/**/**/*.(png|webp)$': [
             'cache-control: public, max-age=31536000, immutable',
           ],
-          '/*.js': ['cache-control: public, max-age=31536000, immutable'],
-          '/*.min.js': ['cache-control: public, max-age=31536000, immutable'],
-          '/*.js.map': ['cache-control: public, max-age=31536000, immutable'],
-          '/*.css': ['cache-control: public, max-age=31536000, immutable'],
-          '/*.png': ['cache-control: public, max-age=31536000, immutable'],
+          '/*.(js|map|css|png)$': [
+            'cache-control: public, max-age=31536000, immutable',
+          ],
         },
       },
     },
