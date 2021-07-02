@@ -59,16 +59,8 @@ module.exports = {
           '/page-data/app-data.json': [
             'cache-control: public, max-age=0, must-revalidate',
           ],
-          '/static/*.woff': [
-            'cache-control: public, max-age=31536000, immutable',
-          ],
-          '/static/*.woff2': [
-            'cache-control: public, max-age=31536000, immutable',
-          ],
-          '/static/**/**/*.png': [
-            'cache-control: public, max-age=31536000, immutable',
-          ],
-          '/static/**/**/*.webp': [
+          '/static/*': ['cache-control: public, max-age=31536000, immutable'],
+          '/static/**/**/*': [
             'cache-control: public, max-age=31536000, immutable',
           ],
           '/*.js': ['cache-control: public, max-age=31536000, immutable'],
