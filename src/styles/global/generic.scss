@@ -1,14 +1,15 @@
 @charset 'utf-8';
 
-#gatsby-focus-wrapper {
-    scroll-behavior: smooth !important;
-    overflow-x: hidden !important;
-    overflow-y: scroll !important;
+html,
+body {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
 }
 
 .navbar-brand,
 h1,
 h2 {
-    font-family: 'Big Shoulders Stencil Display', $family-sans-serif;
-    white-space: nowrap;
+  font-family: 'Big Shoulders Stencil Display', $family-sans-serif;
+  white-space: nowrap;
 }

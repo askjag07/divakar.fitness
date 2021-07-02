@@ -36,7 +36,6 @@ module.exports = {
       options: {
         defaults: {
           placeholder: 'blurred',
-          layout: 'fullWidth',
         },
       },
     },
