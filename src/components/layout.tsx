@@ -33,6 +33,7 @@ export default class Layout extends React.Component<
           />
           <link rel="shortcut icon" href="/i.png"></link>
           <meta charSet="utf-8" />
+          <meta name="robots" content="all" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
