@@ -34,7 +34,7 @@ $family-sans-serif: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto,
   'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, sans-serif,
   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-$size-1: 7rem;
+$size-1: 6rem;
 $size-2: 5.5rem;
 $size-2-1: 4rem;
 $size-2-2: 3rem;
@@ -82,8 +82,15 @@ h2 {
 }
 
 .hero {
-  margin: 100px auto !important;
+  padding: 100px auto !important;
 }
+
+@media (max-height: 1000px) {
+  .is-fullheight {
+    min-height: 1000px !important;
+  }
+}
+
 @media (max-width: $tablet) {
   body {
     overflow-x: hidden !important;

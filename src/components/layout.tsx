@@ -279,7 +279,7 @@ export default class Layout extends React.Component<
               </div>
               <div className="level-item">
                 <button
-                  name="Scroll Up"
+                  aria-label="Scroll Up"
                   className="button mt-4 is-small is-primary"
                   onClick={this.excelsior}
                 >

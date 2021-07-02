@@ -21,7 +21,7 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
           </div>
           <div className="hero-foot my-5">
             <button
-              name="Scroll Down"
+              aria-label="Scroll Down"
               className="button is-black is-inverted is-bouncing"
               onClick={() => this.scrollRef.current?.scrollIntoView()}
               ref={this.scrollRef}
