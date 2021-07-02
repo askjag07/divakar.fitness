@@ -13,7 +13,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-preact`,
-    `gatsby-plugin-loadable-components-ssr`,
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
@@ -30,28 +29,26 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-minify-classnames`,
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-preload-fonts`,
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: `gatsby-plugin-sharp`,
       options: {
-        output: `/`,
+        defaults: {
+          placeholder: 'blurred',
+          layout: 'fullWidth',
+        },
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-loadable-components-ssr`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: `https://divakar.fitness`,
-        sitemap: [
-          `https://divakar.fitness/sitemap-0.xml`,
-          `https://divakar.fitness/sitemap-index.xml`,
-        ],
         policy: [{ userAgent: `*`, allow: `/` }],
-        output: `/robots.txt`,
       },
     },
     {
@@ -61,10 +58,11 @@ module.exports = {
         short_name: `Divakar`,
         lang: `en`,
         start_url: `/`,
-        background_color: `#000000`,
+        background_color: `#b86bff`,
         theme_color: `#b86bff`,
         display: `standalone`,
         icon: `src/images/i.png`,
+        cache_busting_mode: 'none',
       },
     },
     {

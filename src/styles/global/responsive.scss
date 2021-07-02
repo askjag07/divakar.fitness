@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+@media (max-height: 800px) and (min-width: 769px) {
+    .hero {
+        min-height: 800px !important;
+        padding: 300px auto !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero:not(.is-fullheight) {
+        margin: 8vh auto !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .is-size-2-1 {
+        font-size: $size-2-1 !important;
+    }
+    .is-size-2-2 {
+        font-size: $size-2-2 !important;
+    }
+    .button {
+        border-radius: $radius-small !important;
+        font-size: $size-7 !important;
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .is-size-2-1 {
+        font-size: $size-2-2 !important;
+    }
+    .is-size-2-2 {
+        font-size: $size-2-3 !important;
+    }
+}

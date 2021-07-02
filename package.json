@@ -1,8 +1,8 @@
 {
   "name": "divakar.fitness",
-  "version": "1.1.7",
+  "version": "1.2.1",
   "private": true,
-  "description": "A really fast template for gatsby cloud apps.",
+  "description": "Divakar | Gym Trainer and Body Transformation Specialist",
   "author": "Akshaj Jagarapu",
   "keywords": [
     "gatsby",
@@ -16,9 +16,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "preload-fonts": "gatsby-preload-fonts",
-    "format": "prettier --ignore-path .gitignore --write .",
-    "type-check": "tsc"
+    "test": "prettier --write . && tsc",
+    "up": "ncu -u && npm i",
+    "pr": "gatsby-preload-fonts"
   },
   "dependencies": {
     "@fontsource/big-shoulders-stencil-display": "^4.4.5",
@@ -43,7 +43,7 @@
     "gatsby-source-filesystem": "^3.8.0",
     "postcss": "^8.3.5",
     "postcss-preset-env": "^6.7.0",
-    "preact": "^10.5.13",
+    "preact": "^10.5.14",
     "preact-render-to-string": "^5.1.19",
     "react-helmet": "^6.1.0",
     "sass": "^1.35.1"
@@ -63,6 +63,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "lint-staged": "^11.0.0",
+    "npm-check-updates": "^11.7.1",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
