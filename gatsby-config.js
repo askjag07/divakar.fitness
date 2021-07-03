@@ -40,22 +40,17 @@ module.exports = {
       },
     },
     'gatsby-plugin-image',
+    'gatsby-plugin-csp',
     {
       resolve: 'gatsby-plugin-gatsby-cloud',
       options: {
         headers: {
-          '/sw.js': ['cache-control: public, max-age=0, must-revalidate'],
-          '/index.html': ['cache-control: public, max-age=0, must-revalidate'],
-          '/404.html': ['cache-control: public, max-age=0, must-revalidate'],
-          '/*/index.html': [
-            'cache-control: public, max-age=0, must-revalidate',
-          ],
-          '/page-data/app-data.json': [
-            'cache-control: public, max-age=0, must-revalidate',
-          ],
-          '/page-data/*/page-data.json': [
-            'cache-control: public, max-age=0, must-revalidate',
-          ],
+          '/sw.js': ['cache-control: public, no-cache'],
+          '/index.html': ['cache-control: public, no-cache'],
+          '/404.html': ['cache-control: public, no-cache'],
+          '/*/index.html': ['cache-control: public, no-cache'],
+          '/page-data/app-data.json': ['cache-control: public, no-cache'],
+          '/page-data/*/page-data.json': ['cache-control: public, no-cache'],
           '/static/*.woff': [
             'cache-control: public, max-age=31536000, immutable',
           ],
@@ -73,12 +68,12 @@ module.exports = {
           '/*.png': ['cache-control: public, max-age=31536000, immutable'],
         },
         allPageHeaders: [
-          'X-Robots-Tag: all',
-          'X-Frame-Options: SAMEORIGIN, always',
-          'X-XSS-Protection: 1, mode=block, always',
-          'X-Content-Type-Options: nosniff, always',
           'Referrer-Policy: no-referrer-when-downgrade, always',
           'Strict-Transport-Security: max-age=31536000, includeSubDomains, preload',
+          'X-Content-Type-Options: nosniff, always',
+          'X-Frame-Options: SAMEORIGIN, always',
+          'X-Robots-Tag: all',
+          'X-XSS-Protection: 1, mode=block, always',
         ],
       },
     },
