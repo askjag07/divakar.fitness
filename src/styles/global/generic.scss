@@ -11,7 +11,7 @@ body,
 body,
 #___gatsby,
 #gatsby-focus-wrapper {
-  position: relative;
+  position: relative !important;
   width: 100% !important;
   box-sizing: border-box !important;
 }
@@ -19,6 +19,6 @@ body,
 .navbar-brand,
 h1,
 h2 {
-  font-family: 'Big Shoulders Stencil Display', $family-sans-serif;
+  font-family: "Big Shoulders Stencil Display", $family-sans-serif;
   white-space: nowrap;
 }

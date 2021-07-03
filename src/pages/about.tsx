@@ -21,7 +21,7 @@ export default class AboutPage extends React.Component<{}, {}> {
               </h1>
             </div>
           </div>
-          <div className="hero-foot mb-5">
+          <div className="hero-foot mb-6 pb-6">
             <button
               aria-label="Scroll Down"
               className="button is-black is-inverted is-bouncing"
@@ -42,14 +42,12 @@ export default class AboutPage extends React.Component<{}, {}> {
             </button>
           </div>
         </main>
-        <section className="section columns is-medium is-centered is-vcentered has-text-centered-mobile">
+        <section className="section columns is-medium is-centered is-vcentered has-text-centered">
           <div className="column is-6">
-            <h2 className="title is-size-2-2 is-2">
-              🏆 Body
+            <h2 className="title is-2 is-size-2-2">
+              Champion
               <br />
-              Transformation
-              <br />
-              Specialist.
+              Weight Lifter
             </h2>
             <h3 className="subtitle"></h3>
           </div>
@@ -61,14 +59,14 @@ export default class AboutPage extends React.Component<{}, {}> {
           </div>
         </section>
         <section className="section is-large has-text-centered">
-          <h2 className="title is-size-2-2 is-2">
+          <h2 className="title is-2 is-size-2-2">
             Certified
             <br />
             Trainer.
           </h2>
           <div className="box is-6 m-6 has-background-primary">
             <StaticImage
-              src="https://bulma.io/images/placeholders/640x360.png"
+              src="../images/c.png"
               alt="A picture of Divakar Vonteddu's certificate."
             />
           </div>

@@ -29,13 +29,16 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-minify-classnames`,
+    'gatsby-plugin-minify-classnames',
     'gatsby-plugin-preload-fonts',
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
         defaults: {
-          placeholder: 'blurred',
+          placeholder: 'tracedSVG',
+          tracedSVGOptions: {
+            color: '#b86bff',
+          },
         },
       },
     },
