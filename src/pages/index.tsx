@@ -1,10 +1,10 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import * as React from 'react';
+import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import Layout from "../components/layout";
+import Layout from '../components/layout';
 
-import "../styles/pages/index/_all.scss";
+import '../styles/pages/index/_all.scss';
 
 export default class IndexPage extends React.Component<{}, {}> {
   private scrollRef: React.RefObject<HTMLButtonElement> =

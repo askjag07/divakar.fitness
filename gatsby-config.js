@@ -13,12 +13,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-preact',
-    {
-      resolve: 'gatsby-plugin-postcss',
-      options: {
-        postCssPlugins: [require('postcss-preset-env')({ stage: 3 })],
-      },
-    },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-purgecss',
@@ -37,7 +31,7 @@ module.exports = {
         defaults: {
           placeholder: 'tracedSVG',
           tracedSVGOptions: {
-            color: '#b86bff',
+            color: '#00b3ff',
           },
         },
       },

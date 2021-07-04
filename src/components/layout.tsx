@@ -1,6 +1,6 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import { Helmet } from "react-helmet";
+import * as React from 'react';
+import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 export default class Layout extends React.Component<
   { title: string },
@@ -22,14 +22,14 @@ export default class Layout extends React.Component<
       <>
         <Helmet
           htmlAttributes={{
-            lang: "en",
+            lang: 'en',
           }}
           defer={false}
         >
           <title>{`${this.props.title} | Divakar, Professional Gym Trainer`}</title>
           <link
             rel="canonical"
-            href={typeof window !== "undefined" ? window.location.href : ""}
+            href={typeof window !== 'undefined' ? window.location.href : ''}
           />
           <link rel="shortcut icon" href="/i.png"></link>
           <meta charSet="utf-8" />
@@ -55,7 +55,7 @@ export default class Layout extends React.Component<
           />
           <meta
             property="og:url"
-            content={typeof window !== "undefined" ? window.location.href : ""}
+            content={typeof window !== 'undefined' ? window.location.href : ''}
           />
           <meta property="og:type" content="website" />
           <meta
@@ -69,7 +69,7 @@ export default class Layout extends React.Component<
           />
           <meta
             property="twitter:url"
-            content={typeof window !== "undefined" ? window.location.href : ""}
+            content={typeof window !== 'undefined' ? window.location.href : ''}
           />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:creator" content="@divakarvonteddu" />
@@ -120,7 +120,7 @@ export default class Layout extends React.Component<
               <a
                 role="button"
                 className={`navbar-burger mt-2 ${
-                  this.state.activeMenu ? "is-active" : ""
+                  this.state.activeMenu ? 'is-active' : ''
                 }`}
                 aria-label="menu"
                 aria-expanded="false"
@@ -139,7 +139,7 @@ export default class Layout extends React.Component<
             <div
               id="mainNavbar"
               className={`navbar-menu ${
-                this.state.activeMenu ? "is-active" : ""
+                this.state.activeMenu ? 'is-active' : ''
               }`}
             >
               <div className="navbar-start pl-2">
