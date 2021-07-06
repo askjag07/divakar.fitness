@@ -80,7 +80,6 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-loadable-components-ssr',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     {
