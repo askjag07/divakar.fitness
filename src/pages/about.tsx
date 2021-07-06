@@ -19,16 +19,15 @@ export default class AboutPage extends React.Component<{}, {}> {
             </div>
           </div>
         </main>
-        <section className="section columns is-medium is-centered is-vcentered has-text-centered">
+        <section className="section columns is-large is-centered is-vcentered has-text-centered">
           <div className="column is-6">
             <h2 className="title is-2 is-size-2-2">
               Champion
               <br />
-              Weight Lifter
+              Weightlifter
             </h2>
-            <h3 className="subtitle"></h3>
           </div>
-          <div className="column box is-6 m-6 has-background-info">
+          <div className="column my-6 mx-3 box is-6 has-background-info">
             <StaticImage
               src="../../static/m.png"
               alt="A picture of Divakar Vonteddu."
