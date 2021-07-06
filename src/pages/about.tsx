@@ -36,7 +36,7 @@ export default class AboutPage extends React.Component<{}, {}> {
           <h2 className="title is-2 is-size-2-2">
             Certified
             <br />
-            Trainer.
+            Trainer
           </h2>
           <div className="box is-6 m-6 has-background-primary">
             <StaticImage

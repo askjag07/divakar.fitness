@@ -11,7 +11,7 @@ export default class NotFoundPage extends React.Component<{}, {}> {
               <h1 className="title is-size-2-1 is-size-2-mobile is-1">
                 Page
                 <br />
-                Not Found.
+                Not Found
               </h1>
               <Link className="button is-primary mt-3 is-medium" to="/">
                 Go Home

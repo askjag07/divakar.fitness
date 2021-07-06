@@ -11,6 +11,8 @@
 
 .sl {
   position: relative;
+  padding: 0 !important;
+  margin: 0 !important;
   & {
     animation: sl 40s linear infinite alternate;
   }

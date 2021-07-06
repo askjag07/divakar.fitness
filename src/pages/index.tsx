@@ -52,7 +52,7 @@ export default class IndexPage extends React.Component<{}, {}> {
             See Testimonials
           </Link>
         </section>
-        <section className="section sl columns is-5 is-vcentered is-mobile p-0 m-0">
+        <section className="section sl columns is-5 is-vcentered is-mobile">
           <div className="column box m-4 is-3 has-background-info is-focusable">
             <StaticImage
               src="../images/1.png"
@@ -98,7 +98,7 @@ export default class IndexPage extends React.Component<{}, {}> {
         </section>
         <section className="section columns is-large is-centered is-vcentered has-text-centered-mobile">
           <div className="column is-6">
-            <h2 className="title is-2 is-size-2-2">In 30 Days.</h2>
+            <h2 className="title is-2 is-size-2-2">30 Days.</h2>
             <div className="subtitle is-size-5 is-size-6-mobile pt-6">
               <div className="icon-text block is-flex-wrap-nowrap">
                 <span className="icon mr-5">
