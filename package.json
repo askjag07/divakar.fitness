@@ -1,6 +1,6 @@
 {
   "name": "divakar.fitness",
-  "version": "1.2.14",
+  "version": "1.2.15",
   "private": true,
   "description": "Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today.",
   "author": "Akshaj Jagarapu",
@@ -66,7 +66,6 @@
     "npm-check-updates": "^11.8.1",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "typescript": "^4.3.5"
   },
   "browserslist": [
