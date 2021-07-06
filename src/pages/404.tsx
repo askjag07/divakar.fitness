@@ -1,12 +1,10 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Layout from "../components/layout";
-
 export default class NotFoundPage extends React.Component<{}, {}> {
   override render() {
     return (
-      <Layout title="Not Found">
+      <>
         <main className="hero is-fullheight-with-navbar has-text-centered">
           <div className="hero-body">
             <div className="column">
@@ -21,7 +19,7 @@ export default class NotFoundPage extends React.Component<{}, {}> {
             </div>
           </div>
         </main>
-      </Layout>
+      </>
     );
   }
 }

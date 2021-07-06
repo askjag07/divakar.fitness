@@ -2,14 +2,12 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from "../components/layout";
-
 import "../styles/pages/index/_all.scss";
 
 export default class IndexPage extends React.Component<{}, {}> {
   override render() {
     return (
-      <Layout title="Home">
+      <>
         <main className="hero is-fullheight-with-navbar has-text-centered">
           <div className="hero-body">
             <div className="column">
@@ -204,7 +202,7 @@ export default class IndexPage extends React.Component<{}, {}> {
             </svg>
           </div>
         </section>
-      </Layout>
+      </>
     );
   }
 }

@@ -1,18 +1,17 @@
 import * as React from "react";
-import { Link } from "gatsby";
+import { Link, PageProps } from "gatsby";
 import { Helmet } from "react-helmet";
 
 export default class Layout extends React.Component<
-  { title: string },
+  {},
   { activeMenu: boolean }
 > {
-  constructor(props: { title: string }) {
+  constructor(props: PageProps) {
     super(props);
     this.state = {
       activeMenu: false,
     };
   }
-
   excelsior(): void {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -26,7 +25,12 @@ export default class Layout extends React.Component<
           }}
           defer={false}
         >
-          <title>{`${this.props.title} | Divakar, Professional Gym Trainer`}</title>
+          <title>{`${((s: string): string =>
+            ["about", "testimonials", "home"].includes(s)
+              ? `${s[0]?.toUpperCase()}${s.slice(1)}`
+              : "Not Found")(
+            window.location.pathname.replace(/\//g, "") || "home"
+          )} | Divakar, Professional Gym Trainer`}</title>
           <link
             rel="canonical"
             href={typeof window !== "undefined" ? window.location.href : ""}

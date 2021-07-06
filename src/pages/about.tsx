@@ -1,12 +1,10 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from "../components/layout";
-
 export default class AboutPage extends React.Component<{}, {}> {
   override render() {
     return (
-      <Layout title="About">
+      <>
         <main className="hero is-fullheight-with-navbar has-text-centered">
           <div className="hero-body">
             <div className="column">
@@ -47,7 +45,7 @@ export default class AboutPage extends React.Component<{}, {}> {
             />
           </div>
         </section>
-      </Layout>
+      </>
     );
   }
 }

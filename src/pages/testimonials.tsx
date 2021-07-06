@@ -1,11 +1,9 @@
 import * as React from "react";
 
-import Layout from "../components/layout";
-
 export default class TestimonialsPage extends React.Component<{}, {}> {
   override render() {
     return (
-      <Layout title="Testimonials">
+      <>
         <main className="hero is-medium has-text-centered">
           <div className="hero-body">
             <div className="column">
@@ -102,7 +100,7 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
             </article>
           </div>
         </section>
-      </Layout>
+      </>
     );
   }
 }
