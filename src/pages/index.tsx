@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import * as React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from '../components/layout';
+import Layout from "../components/layout";
 
-import '../styles/pages/index/_all.scss';
+import "../styles/pages/index/_all.scss";
 
 export default class IndexPage extends React.Component<{}, {}> {
   private scrollRef: React.RefObject<HTMLButtonElement> =
@@ -99,77 +99,47 @@ export default class IndexPage extends React.Component<{}, {}> {
             See Testimonials
           </Link>
         </section>
-        <section className="section sl columns is-5 is-vcentered is-centered is-mobile p-0 m-0">
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
+        <section className="section sl columns is-5 is-vcentered is-mobile p-0 m-0">
+          <div className="column box m-4 is-3 has-background-info is-focusable">
             <StaticImage
               src="../images/1.png"
               alt="Client 1 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
+          <div className="column box m-4 is-3 has-background-info is-focusable">
             <StaticImage
               src="../images/2.png"
               alt="Client 2 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
+          <div className="column box m-4 is-3 has-background-info is-focusable">
             <StaticImage
               src="../images/3.png"
               alt="Client 3 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
+          <div className="column box m-4 is-3 has-background-info is-focusable">
             <StaticImage
               src="../images/4.png"
               alt="Client 4 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
+          <div className="column box m-4 is-3 has-background-info is-focusable">
             <StaticImage
               src="../images/5.png"
               alt="Client 5 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
+          <div className="column box m-4 is-3 has-background-info is-focusable">
             <StaticImage
               src="../images/6.png"
               alt="Client 6 before and after gym workouts."
             />
           </div>
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
+          <div className="column box m-4 is-3 has-background-info is-focusable">
             <StaticImage
               src="../images/7.png"
               alt="Client 7 before and after gym workouts."
-            />
-          </div>
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
-            <StaticImage
-              src="../images/1.png"
-              alt="Client 1 before and after gym workouts."
-            />
-          </div>
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
-            <StaticImage
-              src="../images/2.png"
-              alt="Client 2 before and after gym workouts."
-            />
-          </div>
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
-            <StaticImage
-              src="../images/3.png"
-              alt="Client 3 before and after gym workouts."
-            />
-          </div>
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
-            <StaticImage
-              src="../images/4.png"
-              alt="Client 4 before and after gym workouts."
-            />
-          </div>
-          <div className="column box mx-4 is-3 has-background-info is-focusable">
-            <StaticImage
-              src="../images/5.png"
-              alt="Client 5 before and after gym workouts."
             />
           </div>
         </section>

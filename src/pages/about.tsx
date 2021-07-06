@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import * as React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from '../components/layout';
+import Layout from "../components/layout";
 
 export default class AboutPage extends React.Component<{}, {}> {
   private scrollRef: React.RefObject<HTMLButtonElement> =
@@ -53,7 +53,7 @@ export default class AboutPage extends React.Component<{}, {}> {
           </div>
           <div className="column box is-6 m-6 has-background-info">
             <StaticImage
-              src="../images/m.png"
+              src="../../static/m.png"
               alt="A picture of Divakar Vonteddu."
             />
           </div>
