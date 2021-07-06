@@ -31,14 +31,8 @@ export default class Layout extends React.Component<
             rel="canonical"
             href={typeof window !== "undefined" ? window.location.href : ""}
           />
-          <link
-            rel="preload"
-            href="/big-shoulders-stencil-display-latin-900-normal.woff2"
-            as="font"
-            type="font/woff2"
-          />
           <meta charSet="utf-8" />
-          <meta name="robots" content="all" />
+          <meta name="robots" content="index" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
