@@ -96,9 +96,11 @@ export default class IndexPage extends React.Component<{}, {}> {
             />
           </div>
         </section>
-        <section className="section columns is-large is-centered is-vcentered has-text-centered-mobile">
+        <section className="section columns is-large is-centered is-vcentered">
           <div className="column is-6">
-            <h2 className="title is-2 is-size-2-2">30 Days.</h2>
+            <h2 className="title is-2 is-size-2-2 has-text-centered-mobile">
+              30 Days.
+            </h2>
             <div className="subtitle is-size-5 is-size-6-mobile pt-6">
               <div className="icon-text block is-flex-wrap-nowrap">
                 <span className="icon mr-5">

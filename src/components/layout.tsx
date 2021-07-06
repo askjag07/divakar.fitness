@@ -145,6 +145,12 @@ export default class Layout extends React.Component<
               className={`navbar-menu ${
                 this.state.activeMenu ? "is-active" : ""
               }`}
+              onClick={() =>
+                this.state.activeMenu &&
+                this.setState({
+                  activeMenu: false,
+                })
+              }
             >
               <div className="navbar-start pl-2">
                 <Link className="navbar-item" to="/testimonials/">
