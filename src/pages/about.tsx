@@ -7,7 +7,7 @@ export default class AboutPage extends React.Component<{}, {}> {
   override render() {
     return (
       <Layout title="About">
-        <main className="hero is-fullheight has-text-centered">
+        <main className="hero is-fullheight-with-navbar has-text-centered">
           <div className="hero-body">
             <div className="column">
               <h1 className="title is-size-2-1 is-size-2-mobile is-1">
