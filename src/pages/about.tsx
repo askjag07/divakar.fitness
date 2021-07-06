@@ -40,7 +40,7 @@ export default class AboutPage extends React.Component<{}, {}> {
           </h2>
           <div className="box is-6 m-6 has-background-primary">
             <StaticImage
-              src="../images/c.png"
+              src="../../static/c.png"
               alt="A picture of Divakar Vonteddu's certificate."
             />
           </div>

@@ -92,7 +92,8 @@ export default class Layout extends React.Component<
           "logo":
             "https://divakar.fitness/i.png",
           "image": [
-            "https://divakar.fitness/m.png"
+            "https://divakar.fitness/m.png",
+            "https://divakar.fitness/c.png"
           ],
           "telephone": "+918074623617",
           "description": "Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today.",
