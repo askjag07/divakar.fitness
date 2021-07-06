@@ -1,9 +1,9 @@
-import { Component } from "react";
+import * as React from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 
-export default class NotFoundPage extends Component<{}, {}> {
+export default class NotFoundPage extends React.Component<{}, {}> {
   override render() {
     return (
       <Layout title="Not Found">

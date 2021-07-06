@@ -1,9 +1,9 @@
-import { Component } from "react";
+import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 
-export default class AboutPage extends Component<{}, {}> {
+export default class AboutPage extends React.Component<{}, {}> {
   override render() {
     return (
       <Layout title="About">

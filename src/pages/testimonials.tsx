@@ -1,8 +1,8 @@
-import { Component } from "react";
+import * as React from "react";
 
 import Layout from "../components/layout";
 
-export default class TestimonialsPage extends Component<{}, {}> {
+export default class TestimonialsPage extends React.Component<{}, {}> {
   override render() {
     return (
       <Layout title="Testimonials">

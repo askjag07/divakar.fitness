@@ -1,8 +1,8 @@
-import { Component } from "react";
+import * as React from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 
-export default class Layout extends Component<
+export default class Layout extends React.Component<
   { title: string },
   { activeMenu: boolean }
 > {
