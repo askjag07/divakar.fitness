@@ -16,6 +16,15 @@ body,
   box-sizing: border-box !important;
 }
 
+@font-face {
+  font-family: "Big Shoulders Stencil Display";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: url("/big-shoulders-stencil-display-latin-900-normal.woff2")
+    format("woff2");
+}
+
 .navbar-brand,
 h1,
 h2 {

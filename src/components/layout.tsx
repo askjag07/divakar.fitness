@@ -31,7 +31,12 @@ export default class Layout extends React.Component<
             rel="canonical"
             href={typeof window !== "undefined" ? window.location.href : ""}
           />
-          <link rel="shortcut icon" href="https://divakar.fitness/i.png"></link>
+          <link
+            rel="preload"
+            href="/big-shoulders-stencil-display-latin-900-normal.woff2"
+            as="font"
+            type="font/woff2"
+          />
           <meta charSet="utf-8" />
           <meta name="robots" content="all" />
           <meta

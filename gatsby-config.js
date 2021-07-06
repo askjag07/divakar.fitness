@@ -29,7 +29,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-minify-classnames",
-    "gatsby-plugin-preload-fonts",
     {
       resolve: "gatsby-plugin-sharp",
       options: {
@@ -56,7 +55,10 @@ module.exports = {
           "/static/*.woff": [
             "cache-control: public, max-age=31536000, immutable",
           ],
-          "/static/*.woff2": [
+          "/big-shoulders-stencil-display-latin-900-normal.woff2": [
+            "cache-control: public, max-age=31536000, immutable",
+          ],
+          "/big-shoulders-stencil-display-latin-900-normal.woff": [
             "cache-control: public, max-age=31536000, immutable",
           ],
           "/static/*/*/*.webp": [

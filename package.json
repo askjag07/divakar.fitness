@@ -21,7 +21,6 @@
     "pr": "gatsby-preload-fonts"
   },
   "dependencies": {
-    "@fontsource/big-shoulders-stencil-display": "^4.4.5",
     "autoprefixer": "^10.2.6",
     "bulma": "^0.9.3",
     "gatsby": "^3.8.1",
@@ -33,7 +32,6 @@
     "gatsby-plugin-offline": "^4.8.0",
     "gatsby-plugin-postcss": "^4.8.0",
     "gatsby-plugin-preact": "^5.8.0",
-    "gatsby-plugin-preload-fonts": "^2.8.0",
     "gatsby-plugin-purgecss": "^6.0.2",
     "gatsby-plugin-react-helmet": "^4.8.0",
     "gatsby-plugin-robots-txt": "^1.6.8",
