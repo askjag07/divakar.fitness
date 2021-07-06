@@ -1,15 +1,12 @@
-import * as React from "react";
+import { Component } from "react";
 
 import Layout from "../components/layout";
 
-export default class TestimonialsPage extends React.Component<{}, {}> {
-  private scrollRef: React.RefObject<HTMLButtonElement> =
-    React.createRef<HTMLButtonElement>();
-
+export default class TestimonialsPage extends Component<{}, {}> {
   override render() {
     return (
       <Layout title="Testimonials">
-        <section className="hero is-medium has-text-centered">
+        <main className="hero is-medium has-text-centered">
           <div className="hero-body">
             <div className="column">
               <h1 className="title is-size-2-1 is-size-2-mobile is-1 mb-6">
@@ -17,27 +14,9 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
                 <br />
                 Testimonials.
               </h1>
-              <button
-                aria-label="Scroll Down"
-                className="button is-medium mt-6 is-black is-inverted is-bouncing"
-                onClick={() => this.scrollRef.current?.scrollIntoView()}
-                ref={this.scrollRef}
-              >
-                <span className="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 320 512"
-                    fill="#fff"
-                    height={36}
-                    width={36}
-                  >
-                    <path d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z" />
-                  </svg>
-                </span>
-              </button>
             </div>
           </div>
-        </section>
+        </main>
         <section className="tile is-ancestor">
           <div className="tile is-vertical is-8">
             <div className="tile">
