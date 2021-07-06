@@ -1,0 +1,17 @@
+{
+  "timestamp": 1625559601039,
+  "hash": "5d8d3462c0061d6369731b7d481db558",
+  "assets": {
+    "/404.html": {
+      "/big-shoulders-stencil-display-latin-900-normal.woff2": true
+    },
+    "/404/": { "/big-shoulders-stencil-display-latin-900-normal.woff2": true },
+    "/about/": {
+      "/big-shoulders-stencil-display-latin-900-normal.woff2": true
+    },
+    "/": { "/big-shoulders-stencil-display-latin-900-normal.woff2": true },
+    "/testimonials/": {
+      "/big-shoulders-stencil-display-latin-900-normal.woff2": true
+    }
+  }
+}
