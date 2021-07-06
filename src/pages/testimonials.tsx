@@ -4,7 +4,7 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
   override render() {
     return (
       <>
-        <main className="hero is-medium has-text-centered">
+        <main className="hero is-small has-text-centered">
           <div className="hero-body">
             <div className="column">
               <h1 className="title is-size-2-1 is-size-2-mobile is-1 mb-6">

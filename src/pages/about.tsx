@@ -20,9 +20,9 @@ export default class AboutPage extends React.Component<{}, {}> {
         <section className="section columns is-large is-centered is-vcentered has-text-centered">
           <div className="column is-6">
             <h2 className="title is-2 is-size-2-2">
-              Champion
+              Weightlift
               <br />
-              Weightlifter
+              Champion
             </h2>
           </div>
           <div className="column my-6 mx-3 box is-6 has-background-info">
