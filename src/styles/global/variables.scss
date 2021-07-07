@@ -1,32 +1,25 @@
 @charset 'utf-8';
 
-$white: #0a0a0a;
-$white-bis: #121212;
-$white-ter: #242424;
-$grey-lightest: #363636;
-$grey-lighter: #4a4a4a;
-$grey-light: #7a7a7a;
-$grey: #b5b5b5;
-$grey-dark: #dbdbdb;
-$grey-darker: #ededed;
-$black-ter: #f5f5f5;
-$black-bis: #fafafa;
-$black: #fff;
+$white: #fff;
+$white-bis: #fafafa;
+$white-ter: #f5f5f5;
+$grey-lightest: #ededed;
+$grey-lighter: #dbdbdb;
+$grey-light: #b5b5b5;
+$grey: #7a7a7a;
+$grey-dark: #4a4a4a;
+$grey-darker: #363636;
+$black-ter: #242424;
+$black-bis: #121212;
+$black: #0a0a0a;
 
-$orange: #ff9d6d;
-$yellow: #f9f871;
-$green: #00c2ad;
-$turquoise: #45fce5;
-$cyan: #00dfff;
-$blue: #00b3ff;
-$purple: #b86bff;
-$red: #f14668;
+$blue: #0d6efd;
+$purple: #a244f4;
+$red: #ff0040;
 
-$primary: $purple;
-$link: $purple;
-$info: $blue;
-$success: $turquoise;
-$warning: $yellow;
+$primary: $blue;
+$link: $blue;
+$info: $purple;
 $danger: $red;
 
 $family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto,

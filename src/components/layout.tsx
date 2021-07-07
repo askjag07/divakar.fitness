@@ -25,12 +25,19 @@ export default class Layout extends React.Component<
           }}
           defer={false}
         >
-          <title>{`${((s: string): string =>
-            ["about", "testimonials", "home"].includes(s)
-              ? `${s[0]?.toUpperCase()}${s.slice(1)}`
-              : "Not Found")(
-            window.location.pathname.replace(/\//g, "") || "home"
-          )} | Divakar, Professional Gym Trainer`}</title>
+          <title>
+            {((s: string): string =>
+              [
+                "about",
+                "testimonials",
+                "divakar | Fitter, Healthier, Happier",
+              ].includes(s)
+                ? `${s[0]?.toUpperCase()}${s.slice(1)} | Divakar`
+                : "Not Found | Divakar")(
+              window.location.pathname.replace(/\//g, "") ||
+                "divakar | Fitter, Healthier, Happier"
+            )}
+          </title>
           <link
             rel="canonical"
             href={typeof window !== "undefined" ? window.location.href : ""}
@@ -44,7 +51,7 @@ export default class Layout extends React.Component<
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="description"
-            content="Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today."
+            content="Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today and get fitter, healthier, happier."
           />
           <meta
             name="keywords"
@@ -63,7 +70,7 @@ export default class Layout extends React.Component<
           <meta property="og:type" content="website" />
           <meta
             property="og:description"
-            content="Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today."
+            content="Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today and get fitter, healthier, happier."
           />
           <meta name="og:image" content="https://divakar.fitness/i.png" />
           <meta
@@ -78,7 +85,7 @@ export default class Layout extends React.Component<
           <meta name="twitter:creator" content="@divakarvonteddu" />
           <meta
             property="twitter:description"
-            content="Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today."
+            content="Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today and get fitter, healthier, happier."
           />
           <meta name="twitter:image" content="https://divakar.fitness/i.png" />
           <script type="application/ld+json">
@@ -96,7 +103,7 @@ export default class Layout extends React.Component<
             "https://divakar.fitness/c.png"
           ],
           "telephone": "+918074623617",
-          "description": "Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today.",
+          "description": "Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today and get fitter, healthier, happier.",
           "speakable": {
             "@type": "SpeakableSpecification",
             "xpath": [
@@ -115,10 +122,7 @@ export default class Layout extends React.Component<
         >
           <header className="container">
             <div className="navbar-brand">
-              <Link
-                className="navbar-item has-text-black is-size-3 mr-6"
-                to="/"
-              >
+              <Link className="navbar-item is-size-3 mr-6" to="/">
                 <strong>Divakar</strong>
               </Link>
               <a
@@ -173,7 +177,7 @@ export default class Layout extends React.Component<
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 512 512"
-                          fill="#fff"
+                          fill="#363636"
                           height={24}
                           width={24}
                         >
@@ -191,7 +195,7 @@ export default class Layout extends React.Component<
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 512 512"
-                          fill="#fff"
+                          fill="#363636"
                           height={24}
                           width={24}
                         >
@@ -209,7 +213,7 @@ export default class Layout extends React.Component<
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 320 512"
-                          fill="#fff"
+                          fill="#363636"
                           height={24}
                           width={24}
                         >
@@ -227,7 +231,7 @@ export default class Layout extends React.Component<
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 512 512"
-                          fill="#fff"
+                          fill="#363636"
                           height={24}
                           width={24}
                         >
@@ -245,7 +249,7 @@ export default class Layout extends React.Component<
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 448 512"
-                          fill="#fff"
+                          fill="#363636"
                           height={24}
                           width={24}
                         >
@@ -313,7 +317,7 @@ export default class Layout extends React.Component<
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512"
-                        fill="#fff"
+                        fill="#363636"
                         height={24}
                         width={24}
                       >
@@ -321,7 +325,9 @@ export default class Layout extends React.Component<
                       </svg>
                     </span>
                   </p>
-                  <p className="heading is-size-6 pt-2">+91 80746-23617</p>
+                  <p className="heading copy is-size-7 has-text-primary pt-2">
+                    +91 80746-23617
+                  </p>
                 </a>
               </div>
               <div className="level-item">
@@ -335,7 +341,7 @@ export default class Layout extends React.Component<
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512"
-                        fill="#fff"
+                        fill="#363636"
                         height={24}
                         width={24}
                       >
@@ -343,7 +349,7 @@ export default class Layout extends React.Component<
                       </svg>
                     </span>
                   </p>
-                  <p className="heading is-size-6 pt-2">
+                  <p className="heading copy is-size-7 has-text-primary pt-2">
                     vonteddudivakar@gmail.com
                   </p>
                 </a>
@@ -359,7 +365,7 @@ export default class Layout extends React.Component<
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 496 512"
-                        fill="#fff"
+                        fill="#363636"
                         height={24}
                         width={24}
                       >
@@ -367,13 +373,15 @@ export default class Layout extends React.Component<
                       </svg>
                     </span>
                   </p>
-                  <p className="heading is-size-6 pt-2">Rajamahendravaram</p>
+                  <p className="heading copy is-size-7 has-text-primary pt-2">
+                    Rajamahendravaram
+                  </p>
                 </a>
               </div>
               <div className="level-item">
                 <button
                   aria-label="Scroll Up"
-                  className="button mt-4 is-small is-primary"
+                  className="button mt-4 is-small is-info"
                   onClick={this.excelsior}
                 >
                   Back to Top
@@ -382,7 +390,7 @@ export default class Layout extends React.Component<
             </nav>
             <small>
               <a
-                className="has-text-black"
+                className="copy has-text-black"
                 href="https://govirtuoso.org/about"
                 target="_blank"
                 rel="noopener noreferrer"

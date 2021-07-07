@@ -1,19 +1,12 @@
 @charset 'utf-8';
 
-html,
-body,
-#___gatsby,
-#gatsby-focus-wrapper {
-  scroll-behavior: smooth !important;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-}
-body,
-#___gatsby,
-#gatsby-focus-wrapper {
+body {
   position: relative !important;
   width: 100% !important;
   box-sizing: border-box !important;
+  scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
 }
 
 @font-face {
@@ -30,6 +23,10 @@ h1,
 h2 {
   font-family: "Big Shoulders Stencil Display", $family-sans-serif;
   white-space: nowrap;
+  .navbar-item,
+  .navbar-item:hover {
+    color: $grey-darker !important;
+  }
 }
 
 .hero.is-small {

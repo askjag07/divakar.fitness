@@ -19,7 +19,7 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
           <div className="tile is-vertical is-8">
             <div className="tile">
               <div className="tile is-parent is-vertical">
-                <article className="tile m-3 is-child notification is-info is-focusable">
+                <article className="tile is-child notification is-info is-focusable">
                   <h3 className="title">Pavan</h3>
                   <h4 className="subtitle">Spondylitis Patient</h4>
                   <p className="content">
@@ -28,7 +28,7 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
                     now.
                   </p>
                 </article>
-                <article className="tile m-3 is-child notification is-danger is-focusable">
+                <article className="tile is-child notification is-danger is-focusable">
                   <h3 className="title">Dr. Rajasekhar</h3>
                   <h4 className="subtitle">Consulting Physician</h4>
                   <p className="content">
@@ -38,7 +38,7 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
                 </article>
               </div>
               <div className="tile is-parent">
-                <article className="tile m-3 is-child notification is-primary is-focusable">
+                <article className="tile is-child notification is-primary is-focusable">
                   <h3 className="title">Manobhiram</h3>
                   <h4 className="subtitle">Gym Member</h4>
                   <p className="content">
@@ -60,7 +60,7 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
               </div>
             </div>
             <div className="tile is-parent">
-              <article className="tile m-3 is-child notification is-info is-focusable">
+              <article className="tile is-child notification is-info is-focusable">
                 <h3 className="title">Harika</h3>
                 <h4 className="subtitle">Gym Member</h4>
                 <p className="content">
@@ -74,7 +74,7 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
             </div>
           </div>
           <div className="tile is-parent">
-            <article className="tile m-3 is-child notification is-danger is-focusable">
+            <article className="tile is-child notification is-danger is-focusable">
               <h3 className="title">Reshma</h3>
               <h4 className="subtitle">Asthma and PCOD Patient</h4>
               <p className="content">

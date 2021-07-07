@@ -30,6 +30,7 @@ module.exports = {
     },
     "gatsby-plugin-minify-classnames",
     "gatsby-plugin-preload-fonts",
+    "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-sharp",
       options: {
@@ -41,7 +42,6 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-image",
     "gatsby-plugin-csp",
     {
       resolve: "gatsby-plugin-gatsby-cloud",
