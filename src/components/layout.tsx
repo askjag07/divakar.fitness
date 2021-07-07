@@ -27,15 +27,12 @@ export default class Layout extends React.Component<
         >
           <title>
             {((s: string): string =>
-              [
-                "about",
-                "testimonials",
-                "divakar | Fitter, Healthier, Happier",
-              ].includes(s)
-                ? `${s[0]?.toUpperCase()}${s.slice(1)} | Divakar`
+              ["about", "testimonials", ""].includes(s)
+                ? !!s
+                  ? `${s[0]?.toUpperCase()}${s.slice(1)} | Divakar`
+                  : "Divakar | Fitter, Healthier, Happier"
                 : "Not Found | Divakar")(
-              window.location.pathname.replace(/\//g, "") ||
-                "divakar | Fitter, Healthier, Happier"
+              window.location.pathname.replace(/\//g, "")
             )}
           </title>
           <link
