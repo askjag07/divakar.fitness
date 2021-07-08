@@ -8,14 +8,14 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
           <div className="hero-body">
             <div className="column">
               <h1 className="title is-size-2-1 is-size-2-mobile is-1 mb-6">
-                See the
+                No Excuses.
                 <br />
-                Testimonials.
+                Only Results.
               </h1>
             </div>
           </div>
         </main>
-        <section className="tile is-ancestor">
+        <section className="tile is-ancestor p-5">
           <div className="tile is-vertical is-8">
             <div className="tile">
               <div className="tile is-parent is-vertical">
