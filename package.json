@@ -1,6 +1,6 @@
 {
   "name": "divakar.fitness",
-  "version": "2.0.3",
+  "version": "2.0.6",
   "private": true,
   "description": "Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today and get fitter, healthier, happier.",
   "author": "Akshaj Jagarapu",
@@ -17,7 +17,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "prettier --write . && tsc",
-    "up": "ncu",
+    "up": "ncu -u && npm i",
     "pr": "gatsby-preload-fonts"
   },
   "dependencies": {
@@ -38,7 +38,7 @@
     "gatsby-plugin-react-helmet": "^4.9.0",
     "gatsby-plugin-robots-txt": "^1.6.8",
     "gatsby-plugin-sass": "^4.9.0",
-    "gatsby-plugin-sharp": "^3.8.0",
+    "gatsby-plugin-sharp": "^3.9.0",
     "gatsby-plugin-sitemap": "^4.5.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.24",
     "gatsby-source-filesystem": "^3.9.0",
