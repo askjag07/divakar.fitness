@@ -7,7 +7,7 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
         <main className="hero is-small has-text-centered">
           <div className="hero-body">
             <div className="column">
-              <h1 className="title is-size-2-1 is-size-2-mobile is-1 mb-6">
+              <h1 className="title is-size-2-1 is-size-2-mobile is-1">
                 No Excuses.
                 <br />
                 Only Results.
@@ -15,7 +15,7 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
             </div>
           </div>
         </main>
-        <section className="tile is-ancestor p-5">
+        <section className="tile is-ancestor px-5">
           <div className="tile is-vertical is-8">
             <div className="tile">
               <div className="tile is-parent is-vertical">
