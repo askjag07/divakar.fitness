@@ -267,14 +267,7 @@ export default class Layout extends React.Component<
             </div>
           </header>
         </nav>
-        <div
-          className="container"
-          onClick={() =>
-            this.setState({
-              activeMenu: false,
-            })
-          }
-        >
+        <div className="container">
           {this.props.children}
           <section className="section is-medium has-text-centered">
             <h2 className="title is-size-2 is-size-2-2">Start Today.</h2>
@@ -298,14 +291,7 @@ export default class Layout extends React.Component<
             </div>
           </section>
         </div>
-        <footer
-          className="footer has-text-centered"
-          onClick={() =>
-            this.setState({
-              activeMenu: false,
-            })
-          }
-        >
+        <footer className="footer has-text-centered">
           <div className="container">
             <nav className="level p-6 has-text-centered">
               <div className="level-item">
