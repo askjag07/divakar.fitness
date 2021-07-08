@@ -119,7 +119,15 @@ export default class Layout extends React.Component<
         >
           <header className="container">
             <div className="navbar-brand">
-              <Link className="navbar-item is-size-3 mr-6" to="/">
+              <Link
+                className="navbar-item is-size-3 mr-6"
+                to="/"
+                onClick={() =>
+                  this.setState({
+                    activeMenu: false,
+                  })
+                }
+              >
                 <strong>Divakar</strong>
               </Link>
               <a
@@ -146,12 +154,6 @@ export default class Layout extends React.Component<
               className={`navbar-menu ${
                 this.state.activeMenu ? "is-active" : ""
               }`}
-              onClick={() =>
-                this.state.activeMenu &&
-                this.setState({
-                  activeMenu: false,
-                })
-              }
             >
               <div className="navbar-start pl-2">
                 <Link className="navbar-item" to="/testimonials/">
@@ -263,7 +265,6 @@ export default class Layout extends React.Component<
         <div
           className="container"
           onClick={() =>
-            this.state.activeMenu &&
             this.setState({
               activeMenu: false,
             })
@@ -293,13 +294,12 @@ export default class Layout extends React.Component<
           </section>
         </div>
         <footer
+          className="footer has-text-centered"
           onClick={() =>
-            this.state.activeMenu &&
             this.setState({
               activeMenu: false,
             })
           }
-          className="footer has-text-centered"
         >
           <div className="container">
             <nav className="level p-6 has-text-centered">
