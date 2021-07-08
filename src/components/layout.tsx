@@ -175,6 +175,7 @@ export default class Layout extends React.Component<
                       className="button is-inverted is-black"
                       href="tel:+918074623617"
                       target="_blank"
+                      aria-label="Phone"
                       rel="noopener noreferrer"
                     >
                       <span className="icon">
@@ -192,6 +193,7 @@ export default class Layout extends React.Component<
                     <a
                       className="button is-inverted is-black"
                       href="mailto:vonteddudivakar@gmail.com"
+                      aria-label="Email"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -210,6 +212,7 @@ export default class Layout extends React.Component<
                     <a
                       className="button is-inverted is-black"
                       href="https://www.facebook.com/divakar.vonteddu"
+                      aria-label="Facebook"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -228,6 +231,7 @@ export default class Layout extends React.Component<
                     <a
                       className="button is-inverted is-black"
                       href="https://twitter.com/divakarvonteddu"
+                      aria-label="Twitter"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -246,6 +250,7 @@ export default class Layout extends React.Component<
                     <a
                       className="button is-inverted is-black"
                       href="https://www.instagram.com/vonteddudivakar"
+                      aria-label="Instagram"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -275,6 +280,7 @@ export default class Layout extends React.Component<
               <a
                 className="button is-primary mx-3"
                 href="tel:+918074623617"
+                aria-label="Phone"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -283,6 +289,7 @@ export default class Layout extends React.Component<
               <a
                 className="button is-info mx-3"
                 href="mailto:vonteddudivakar@gmail.com"
+                aria-label="Email"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -299,6 +306,7 @@ export default class Layout extends React.Component<
                   href="tel:+918074623617"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Phone"
                 >
                   <p className="title">
                     <span className="icon">
@@ -323,6 +331,7 @@ export default class Layout extends React.Component<
                   href="mailto:vonteddudivakar@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Email"
                 >
                   <p className="title">
                     <span className="icon">
@@ -347,6 +356,7 @@ export default class Layout extends React.Component<
                   href="https://goo.gl/maps/Q5QrKuWUzpRb7FqZ8"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Location"
                 >
                   <p className="title">
                     <span className="icon">
@@ -382,6 +392,8 @@ export default class Layout extends React.Component<
                 href="https://govirtuoso.org/about"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Copyright ${new Date().getFullYear()}, Akshaj Jagarapu. All rights
+                reserved.`}
               >
                 &nbsp;© {new Date().getFullYear()}, Akshaj Jagarapu. All rights
                 reserved.

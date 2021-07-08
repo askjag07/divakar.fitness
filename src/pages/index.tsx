@@ -24,6 +24,7 @@ export default class IndexPage extends React.Component<{}, {}> {
                   href="tel:+918074623617"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Phone"
                 >
                   Call Me
                 </a>
@@ -32,6 +33,7 @@ export default class IndexPage extends React.Component<{}, {}> {
                   href="mailto:vonteddudivakar@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Email"
                 >
                   Email Me
                 </a>
