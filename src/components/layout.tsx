@@ -35,17 +35,12 @@ export default class Layout extends React.Component<
               window.location.pathname.replace(/\//g, "")
             )}
           </title>
-          <link
-            rel="canonical"
-            href={typeof window !== "undefined" ? window.location.href : ""}
-          />
           <meta charSet="utf-8" />
           <meta name="robots" content="index" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="description"
             content="Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today and get fitter, healthier, happier."
@@ -56,35 +51,6 @@ export default class Layout extends React.Component<
           />
           <meta name="author" content="Akshaj Jagarapu" />
           <meta name="image" content="https://divakar.fitness/i.png" />
-          <meta
-            property="og:title"
-            content="Divakar, Professional Gym Trainer"
-          />
-          <meta
-            property="og:url"
-            content={typeof window !== "undefined" ? window.location.href : ""}
-          />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:description"
-            content="Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today and get fitter, healthier, happier."
-          />
-          <meta name="og:image" content="https://divakar.fitness/i.png" />
-          <meta
-            name="twitter:title"
-            content="Divakar, Professional Gym Trainer"
-          />
-          <meta
-            property="twitter:url"
-            content={typeof window !== "undefined" ? window.location.href : ""}
-          />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:creator" content="@divakarvonteddu" />
-          <meta
-            property="twitter:description"
-            content="Get fit in 30 days with Divakar, a certified, professional gym trainer and body transformation specialist. Start today and get fitter, healthier, happier."
-          />
-          <meta name="twitter:image" content="https://divakar.fitness/i.png" />
           <script type="application/ld+json">
             {`
         {

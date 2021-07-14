@@ -15,12 +15,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-preact",
-    {
-      resolve: "gatsby-plugin-postcss",
-      options: {
-        postCssPlugins: [require("autoprefixer")()],
-      },
-    },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-purgecss",
@@ -53,9 +47,6 @@ module.exports = {
           "/*/index.html": ["cache-control: public, no-cache"],
           "/page-data/app-data.json": ["cache-control: public, no-cache"],
           "/page-data/*/page-data.json": ["cache-control: public, no-cache"],
-          "/static/*.woff": [
-            "cache-control: public, max-age=31536000, immutable",
-          ],
           "/big-shoulders-stencil-display-latin-900-normal.woff2": [
             "cache-control: public, max-age=31536000, immutable",
           ],
