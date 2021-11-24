@@ -27,10 +27,7 @@ module.exports = {
       resolve: "gatsby-plugin-sharp",
       options: {
         defaults: {
-          placeholder: "tracedSVG",
-          tracedSVGOptions: {
-            color: "#00b3ff",
-          },
+          placeholder: "blurred",
         },
       },
     },
