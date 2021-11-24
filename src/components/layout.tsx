@@ -100,6 +100,8 @@ export default class Layout extends React.Component<
                   alt=""
                   className="navbar-brand-image mr-1"
                   imgClassName="navbar-brand-image"
+                  height={45}
+                  width={45}
                 />
                 <strong>Divakar</strong>
               </Link>
