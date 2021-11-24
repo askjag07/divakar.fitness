@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from "react"
 
 export default class TestimonialsPage extends React.Component<{}, {}> {
   override render() {
@@ -66,7 +66,7 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
                 <p className="content">
                   When I first joined the gym, I was unable to do any exercises
                   and decided to quit. Divakar encouraged me to continue gym and
-                  and planned a 30 day workout plan to see the most satisfying
+                  planned a 30-day workout plan to see the most satisfying
                   results. My stamina and confidence levels increased. I really
                   thank Divakar for the encouragement.
                 </p>
@@ -101,6 +101,6 @@ export default class TestimonialsPage extends React.Component<{}, {}> {
           </div>
         </section>
       </>
-    );
+    )
   }
 }

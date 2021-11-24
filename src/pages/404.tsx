@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Link } from "gatsby";
+import * as React from "react"
+import { Link } from "gatsby"
 
 export default class NotFoundPage extends React.Component<{}, {}> {
   override render() {
@@ -20,6 +20,6 @@ export default class NotFoundPage extends React.Component<{}, {}> {
           </div>
         </main>
       </>
-    );
+    )
   }
 }

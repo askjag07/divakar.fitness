@@ -1,20 +1,21 @@
-import * as React from "react";
-import { Link, PageProps } from "gatsby";
-import { Helmet } from "react-helmet";
+import * as React from "react"
+import { Link, PageProps } from "gatsby"
+import { Helmet } from "react-helmet"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default class Layout extends React.Component<
   {},
   { activeMenu: boolean }
 > {
   constructor(props: PageProps) {
-    super(props);
+    super(props)
     this.state = {
       activeMenu: false,
-    };
+    }
   }
   excelsior(): void {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
   }
   override render() {
     return (
@@ -94,6 +95,12 @@ export default class Layout extends React.Component<
                   })
                 }
               >
+                <StaticImage
+                  src="../../static/i.png"
+                  alt=""
+                  className="navbar-brand-image mr-1"
+                  imgClassName="navbar-brand-image"
+                />
                 <strong>Divakar</strong>
               </Link>
               <a
@@ -361,13 +368,13 @@ export default class Layout extends React.Component<
                 aria-label={`Copyright ${new Date().getFullYear()}, Akshaj Jagarapu. All rights
                 reserved.`}
               >
-                &nbsp;© {new Date().getFullYear()}, Akshaj Jagarapu. All rights
-                reserved.
+                &nbsp;© Copyright {new Date().getFullYear()}, Akshaj Jagarapu.
+                All rights reserved.
               </a>
             </small>
           </div>
         </footer>
       </>
-    );
+    )
   }
 }

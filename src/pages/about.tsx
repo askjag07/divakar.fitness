@@ -1,5 +1,5 @@
-import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default class AboutPage extends React.Component<{}, {}> {
   override render() {
@@ -46,6 +46,6 @@ export default class AboutPage extends React.Component<{}, {}> {
           </div>
         </section>
       </>
-    );
+    )
   }
 }

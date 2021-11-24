@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://divakar.fitness",
+    author: "askjag07",
   },
   plugins: [
-    "gatsby-plugin-perf-budgets",
-    "gatsby-plugin-webpack-bundle-analyser-v2",
     {
       resolve: "gatsby-plugin-typescript",
       options: {
@@ -22,7 +21,6 @@ module.exports = {
         printRejected: true,
       },
     },
-    "gatsby-plugin-minify-classnames",
     "gatsby-plugin-preload-fonts",
     "gatsby-plugin-image",
     {
@@ -107,4 +105,4 @@ module.exports = {
       },
     },
   ],
-};
+}
